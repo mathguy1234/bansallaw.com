@@ -169,18 +169,58 @@
         <a href="#contact" class="hover:text-gold transition-colors">Contact</a>
         <a href="book-consultation.html" class="btn-gold px-5 py-2.5 rounded text-white text-sm">Book a Consultation</a>
       </div>
-      <button class="lg:hidden text-gold text-xl"><i class="fa fa-bars"></i></button>
+      <button id="mobileMenuBtn" class="lg:hidden text-gold text-2xl p-2 -mr-2" aria-label="Open menu"><i class="fa fa-bars"></i></button>
     </div>
   </nav>
 
+  <!-- ─── MOBILE MENU DRAWER ───────────────────────────────── -->
+  <div id="mobileMenu" class="fixed inset-0 z-[999] hidden">
+    <!-- Backdrop -->
+    <div id="mobileMenuOverlay" class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+    <!-- Drawer -->
+    <div class="absolute top-0 right-0 h-full w-72 max-w-[85vw] bg-navy-mid shadow-2xl flex flex-col">
+      <!-- Drawer header -->
+      <div class="flex items-center justify-between px-5 py-4 border-b border-white/10">
+        <div class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded border-2 border-gold flex items-center justify-center">
+            <span class="text-gold font-serif font-black text-xs leading-none">BL</span>
+          </div>
+          <div class="text-white font-serif font-bold text-base leading-none">Bansal <span class="text-gold">Law</span></div>
+        </div>
+        <button id="mobileMenuClose" class="text-gray-400 hover:text-white text-xl p-1.5 -mr-1" aria-label="Close menu">
+          <i class="fa fa-xmark"></i>
+        </button>
+      </div>
+      <!-- Drawer links -->
+      <nav class="flex flex-col flex-1 overflow-y-auto px-5 py-3">
+        <a href="#about"               class="mobile-nav-link text-gray-300 hover:text-gold py-3.5 border-b border-white/5 text-sm font-medium transition-colors flex items-center justify-between">About <i class="fa fa-chevron-right text-[10px] text-gray-600"></i></a>
+        <a href="#services"            class="mobile-nav-link text-gray-300 hover:text-gold py-3.5 border-b border-white/5 text-sm font-medium transition-colors flex items-center justify-between">Services <i class="fa fa-chevron-right text-[10px] text-gray-600"></i></a>
+        <a href="#team"                class="mobile-nav-link text-gray-300 hover:text-gold py-3.5 border-b border-white/5 text-sm font-medium transition-colors flex items-center justify-between">Our Team <i class="fa fa-chevron-right text-[10px] text-gray-600"></i></a>
+        <a href="success-stories.html" class="mobile-nav-link text-gray-300 hover:text-gold py-3.5 border-b border-white/5 text-sm font-medium transition-colors flex items-center justify-between">Success Stories <i class="fa fa-chevron-right text-[10px] text-gray-600"></i></a>
+        <a href="blog.html"            class="mobile-nav-link text-gray-300 hover:text-gold py-3.5 border-b border-white/5 text-sm font-medium transition-colors flex items-center justify-between">Blog <i class="fa fa-chevron-right text-[10px] text-gray-600"></i></a>
+        <a href="significant-cases.html" class="mobile-nav-link text-gray-300 hover:text-gold py-3.5 border-b border-white/5 text-sm font-medium transition-colors flex items-center justify-between">Significant Cases <i class="fa fa-chevron-right text-[10px] text-gray-600"></i></a>
+        <a href="#contact"             class="mobile-nav-link text-gray-300 hover:text-gold py-3.5 border-b border-white/5 text-sm font-medium transition-colors flex items-center justify-between">Contact <i class="fa fa-chevron-right text-[10px] text-gray-600"></i></a>
+      </nav>
+      <!-- CTA -->
+      <div class="px-5 py-5 border-t border-white/10">
+        <a href="book-consultation.html" class="btn-gold block text-center py-3.5 rounded text-sm uppercase tracking-wider">
+          <i class="fa fa-calendar-check mr-2"></i> Book a Consultation
+        </a>
+        <div class="flex items-center justify-center gap-4 mt-4 text-xs text-gray-500">
+          <a href="tel:19055148000" class="flex items-center gap-1.5 hover:text-gold transition-colors"><i class="fa fa-phone text-gold"></i> 905-514-8000</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- ─── HERO ─────────────────────────────────────────────── -->
-  <section class="hero-bg relative min-h-[92vh] flex items-center">
+  <section class="hero-bg relative lg:min-h-[92vh] flex items-center">
     <!-- Decorative rings -->
     <div class="hero-decor-ring" style="width:600px;height:600px;right:-150px;top:-100px;"></div>
     <div class="hero-decor-ring" style="width:350px;height:350px;left:-80px;bottom:-60px;"></div>
     <div class="hero-decor-ring" style="width:180px;height:180px;right:20%;top:15%;"></div>
 
-    <div class="max-w-7xl mx-auto px-4 md:px-10 w-full relative z-10 py-24">
+    <div class="max-w-7xl mx-auto px-4 md:px-10 w-full relative z-10 py-10 lg:py-24">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
         <!-- Left: Copy -->
@@ -201,21 +241,21 @@
             <a href="#services" class="btn-outline-gold px-8 py-3.5 rounded text-sm uppercase tracking-wider">Our Services</a>
           </div>
           <!-- Stats -->
-          <div class="flex divide-x divide-gold/20 mt-12 pt-10 border-t border-white/10">
-            <div class="pr-8 text-center">
-              <div class="text-gold font-serif font-black text-3xl leading-none">200+</div>
+          <div class="flex justify-center lg:justify-start divide-x divide-gold/20 mt-8 pt-8 border-t border-white/10">
+            <div class="pr-4 md:pr-8 text-center">
+              <div class="text-gold font-serif font-black text-2xl md:text-3xl leading-none">200+</div>
               <div class="text-gray-400 text-xs mt-1.5 leading-tight">Clients<br/>Served</div>
             </div>
-            <div class="px-8 text-center">
-              <div class="text-gold font-serif font-black text-3xl leading-none">2</div>
+            <div class="px-4 md:px-8 text-center">
+              <div class="text-gold font-serif font-black text-2xl md:text-3xl leading-none">2</div>
               <div class="text-gray-400 text-xs mt-1.5 leading-tight">Office<br/>Locations</div>
             </div>
-            <div class="px-8 text-center">
-              <div class="text-gold font-serif font-black text-3xl leading-none">100%</div>
+            <div class="px-4 md:px-8 text-center">
+              <div class="text-gold font-serif font-black text-2xl md:text-3xl leading-none">100%</div>
               <div class="text-gray-400 text-xs mt-1.5 leading-tight">Confidential<br/>&amp; Trusted</div>
             </div>
-            <div class="pl-8 text-center">
-              <div class="text-gold font-serif font-black text-3xl leading-none">Free</div>
+            <div class="pl-4 md:pl-8 text-center">
+              <div class="text-gold font-serif font-black text-2xl md:text-3xl leading-none">Free</div>
               <div class="text-gray-400 text-xs mt-1.5 leading-tight">Initial<br/>Consultation</div>
             </div>
           </div>
@@ -900,6 +940,30 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    // ─── MOBILE MENU ─────────────────────────────────────────────────────────────
+    const mobileMenu    = document.getElementById('mobileMenu');
+    const mobileOverlay = document.getElementById('mobileMenuOverlay');
+
+    function openMobileMenu() {
+      mobileMenu.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMobileMenu() {
+      mobileMenu.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    document.getElementById('mobileMenuBtn').addEventListener('click', openMobileMenu);
+    document.getElementById('mobileMenuClose').addEventListener('click', closeMobileMenu);
+    mobileOverlay.addEventListener('click', closeMobileMenu);
+
+    // Close on any internal anchor link click
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', closeMobileMenu);
+    });
+  </script>
 
   <script>
     // ─── EMAILJS CONTACT FORM ────────────────────────────────────────────────────

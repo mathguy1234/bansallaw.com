@@ -75,9 +75,44 @@
         <a href="index.html#contact" class="hover:text-gold transition-colors">Contact</a>
         <a href="book-consultation.html" class="btn-gold px-5 py-2.5 rounded text-white text-sm">Book a Consultation</a>
       </div>
-      <button class="lg:hidden text-gold text-xl"><i class="fa fa-bars"></i></button>
+      <button id="mobileMenuBtn" class="lg:hidden text-gold text-2xl p-2 -mr-2" aria-label="Open menu"><i class="fa fa-bars"></i></button>
     </div>
   </nav>
+
+  <!-- ─── MOBILE MENU DRAWER ───────────────────────────────── -->
+  <div id="mobileMenu" class="fixed inset-0 z-[999] hidden">
+    <div id="mobileMenuOverlay" class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+    <div class="absolute top-0 right-0 h-full w-72 max-w-[85vw] bg-navy-mid shadow-2xl flex flex-col">
+      <div class="flex items-center justify-between px-5 py-4 border-b border-white/10">
+        <div class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded border-2 border-gold flex items-center justify-center">
+            <span class="text-gold font-serif font-black text-xs leading-none">BL</span>
+          </div>
+          <div class="text-white font-serif font-bold text-base leading-none">Bansal <span class="text-gold">Law</span></div>
+        </div>
+        <button id="mobileMenuClose" class="text-gray-400 hover:text-white text-xl p-1.5 -mr-1" aria-label="Close menu">
+          <i class="fa fa-xmark"></i>
+        </button>
+      </div>
+      <nav class="flex flex-col flex-1 overflow-y-auto px-5 py-3">
+        <a href="index.html#about"       class="mobile-nav-link text-gray-300 hover:text-gold py-3.5 border-b border-white/5 text-sm font-medium transition-colors flex items-center justify-between">About <i class="fa fa-chevron-right text-[10px] text-gray-600"></i></a>
+        <a href="index.html#services"    class="mobile-nav-link text-gray-300 hover:text-gold py-3.5 border-b border-white/5 text-sm font-medium transition-colors flex items-center justify-between">Services <i class="fa fa-chevron-right text-[10px] text-gray-600"></i></a>
+        <a href="index.html#team"        class="mobile-nav-link text-gray-300 hover:text-gold py-3.5 border-b border-white/5 text-sm font-medium transition-colors flex items-center justify-between">Our Team <i class="fa fa-chevron-right text-[10px] text-gray-600"></i></a>
+        <a href="success-stories.html"   class="mobile-nav-link text-gray-300 hover:text-gold py-3.5 border-b border-white/5 text-sm font-medium transition-colors flex items-center justify-between">Success Stories <i class="fa fa-chevron-right text-[10px] text-gray-600"></i></a>
+        <a href="blog.html"              class="mobile-nav-link text-gray-300 hover:text-gold py-3.5 border-b border-white/5 text-sm font-medium transition-colors flex items-center justify-between">Blog <i class="fa fa-chevron-right text-[10px] text-gray-600"></i></a>
+        <a href="significant-cases.html" class="mobile-nav-link text-gray-300 hover:text-gold py-3.5 border-b border-white/5 text-sm font-medium transition-colors flex items-center justify-between">Significant Cases <i class="fa fa-chevron-right text-[10px] text-gray-600"></i></a>
+        <a href="index.html#contact"     class="mobile-nav-link text-gray-300 hover:text-gold py-3.5 border-b border-white/5 text-sm font-medium transition-colors flex items-center justify-between">Contact <i class="fa fa-chevron-right text-[10px] text-gray-600"></i></a>
+      </nav>
+      <div class="px-5 py-5 border-t border-white/10">
+        <a href="book-consultation.html" class="btn-gold block text-center py-3.5 rounded text-sm uppercase tracking-wider">
+          <i class="fa fa-calendar-check mr-2"></i> Book a Consultation
+        </a>
+        <div class="flex items-center justify-center gap-4 mt-4 text-xs text-gray-500">
+          <a href="tel:19055148000" class="flex items-center gap-1.5 hover:text-gold transition-colors"><i class="fa fa-phone text-gold"></i> 905-514-8000</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- HERO SECTION -->
   <section style="background: linear-gradient(135deg, #0f1923 0%, #1a2035 60%, #0f1923 100%); position: relative; overflow: hidden;">
@@ -283,6 +318,17 @@
       © 2024 Bansal Law Professional Corporation. All rights reserved. · 905-514-8000 · amit@bansallawyer.com
     </div>
   </footer>
+
+  <script>
+    const mobileMenu    = document.getElementById('mobileMenu');
+    const mobileOverlay = document.getElementById('mobileMenuOverlay');
+    function openMobileMenu()  { mobileMenu.classList.remove('hidden'); document.body.style.overflow = 'hidden'; }
+    function closeMobileMenu() { mobileMenu.classList.add('hidden');    document.body.style.overflow = ''; }
+    document.getElementById('mobileMenuBtn').addEventListener('click', openMobileMenu);
+    document.getElementById('mobileMenuClose').addEventListener('click', closeMobileMenu);
+    mobileOverlay.addEventListener('click', closeMobileMenu);
+    document.querySelectorAll('.mobile-nav-link').forEach(link => link.addEventListener('click', closeMobileMenu));
+  </script>
 
 </body>
 </html>

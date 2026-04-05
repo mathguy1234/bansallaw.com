@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What Is a Judicial Review? — Bansal Law</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#0f1923',
+            'navy-mid': '#1a2035',
+            'navy-light': '#1e2846',
+            gold: '#c9a84c',
+            'gold-light': '#d4b86a',
+            'gold-dark': '#a8882a'
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; background: #0f1923; }
+    h1, h2, h3, h4, .serif { font-family: 'Playfair Display', Georgia, serif; }
+    .btn-gold { background: #c9a84c; color: #fff; font-weight: 600; letter-spacing: 0.05em; transition: background 0.2s, transform 0.2s; }
+    .btn-gold:hover { background: #a8882a; transform: translateY(-1px); }
+    .btn-outline-gold { border: 2px solid #c9a84c; color: #c9a84c; font-weight: 600; letter-spacing: 0.05em; transition: all 0.2s; }
+    .btn-outline-gold:hover { background: #c9a84c; color: #fff; transform: translateY(-1px); }
+    .gold-bar { display: block; width: 50px; height: 3px; background: #c9a84c; margin: 14px auto 0; }
+    .gold-bar-left { display: block; width: 50px; height: 3px; background: #c9a84c; margin: 14px 0 0; }
+    .article-h2 { font-family: 'Playfair Display', Georgia, serif; font-size: 1.5rem; font-weight: 700; color: #fff; padding-left: 1rem; border-left: 3px solid #c9a84c; margin-top: 2.5rem; margin-bottom: 1rem; line-height: 1.35; }
+    .article-body p { color: #d1d5db; font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.25rem; }
+    .article-body ul { color: #d1d5db; font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.25rem; padding-left: 1.5rem; list-style: none; }
+    .article-body ul li { position: relative; padding-left: 1.5rem; margin-bottom: 0.5rem; }
+    .article-body ul li::before { content: ''; position: absolute; left: 0; top: 0.65em; width: 6px; height: 6px; background: #c9a84c; border-radius: 50%; }
+    .callout-box { background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.35); border-radius: 12px; padding: 1.5rem 1.75rem; margin: 2rem 0; }
+    .callout-box p { color: #d4b86a; font-size: 1.0625rem; line-height: 1.75; margin: 0; font-style: italic; }
+  </style>
+</head>
+<body class="text-white">
+
+  <!-- TOP BAR -->
+  <div class="bg-navy py-2 px-4 md:px-10 border-b border-white/5">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-gray-400">
+      <div class="flex items-center gap-5">
+        <span class="flex items-center gap-1.5"><i class="fa fa-map-marker-alt text-gold"></i> Brampton, ON</span>
+        <span class="hidden sm:flex items-center gap-1.5"><i class="fa fa-clock text-gold"></i> Mon–Fri 9:30 AM – 5:30 PM · Sat 11:00 AM – 2:00 PM</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="mailto:amit@bansallawyer.com" class="flex items-center gap-1.5 hover:text-gold transition-colors"><i class="fa fa-envelope text-gold"></i> amit@bansallawyer.com</a>
+        <span class="text-white/20">|</span>
+        <a href="tel:19055148000" class="flex items-center gap-1.5 hover:text-gold transition-colors"><i class="fa fa-phone text-gold"></i> 905-514-8000</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav class="bg-navy-mid sticky top-0 z-50 shadow-lg py-4 px-4 md:px-10">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded border-2 border-gold flex items-center justify-center"><span class="text-gold font-serif font-black text-sm leading-none">BL</span></div>
+        <div>
+          <div class="text-white font-serif font-bold text-lg leading-none tracking-wide">Bansal <span class="text-gold">Law</span></div>
+          <div class="text-gray-400 text-[9px] tracking-[0.18em] uppercase leading-none mt-0.5">Barristers &amp; Solicitors</div>
+        </div>
+      </a>
+      <div class="hidden lg:flex items-center gap-7 text-sm font-medium text-gray-300">
+        <a href="index.html#about" class="hover:text-gold transition-colors">About</a>
+        <a href="index.html#services" class="hover:text-gold transition-colors">Services</a>
+        <a href="index.html#team" class="hover:text-gold transition-colors">Our Team</a>
+        <a href="success-stories.html" class="hover:text-gold transition-colors">Success Stories</a>
+        <a href="blog.html" class="text-gold">Blog</a>
+        <a href="significant-cases.html" class="hover:text-gold transition-colors">Significant Cases</a>
+        <a href="index.html#contact" class="hover:text-gold transition-colors">Contact</a>
+        <a href="book-consultation.html" class="btn-gold px-5 py-2.5 rounded text-white text-sm">Book a Consultation</a>
+      </div>
+      <button class="lg:hidden text-gold text-xl"><i class="fa fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <!-- ARTICLE HERO -->
+  <section class="bg-navy border-b border-white/5 py-14 px-4 md:px-10">
+    <div class="max-w-3xl mx-auto">
+      <a href="blog.html" class="inline-flex items-center gap-2 text-gray-400 text-sm hover:text-gold transition-colors mb-8">
+        <i class="fa fa-arrow-left text-xs"></i> Back to Blog
+      </a>
+      <div class="flex flex-wrap items-center gap-3 mb-5">
+        <span class="bg-gold text-navy text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full">Judicial Review</span>
+        <span class="text-gray-500 text-sm">March 28, 2026</span>
+        <span class="text-white/20">·</span>
+        <span class="text-gray-500 text-sm flex items-center gap-1.5"><i class="fa fa-clock text-gold/60 text-xs"></i> 8 min read</span>
+      </div>
+      <h1 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-5">
+        What Is a Judicial Review — And When Should You File?
+      </h1>
+      <p class="text-gray-500 text-sm">By Bansal Law · Barristers &amp; Solicitors, Brampton, ON</p>
+    </div>
+  </section>
+
+  <!-- ARTICLE BODY -->
+  <article class="max-w-3xl mx-auto px-4 md:px-10 lg:px-0 py-14 article-body">
+
+    <h2 class="article-h2">The Decision Has Been Made. Now What?</h2>
+    <p>You applied. You waited. You received a refusal letter that gave you a generic reason — or sometimes no real reason at all. You may feel like there's nothing left to do. There is.</p>
+    <p>A judicial review is the mechanism by which the Federal Court of Canada reviews a government decision — including immigration decisions made by IRCC — to determine whether that decision was lawful.</p>
+    <p>It is not an appeal in the traditional sense. The Federal Court does not re-decide your case on its merits, substituting its judgment for IRCC's. Instead, it asks a more focused question: was the decision made reasonably and in accordance with the law? If the answer is no, the Court sends it back — to a different officer, with direction on how to get it right this time.</p>
+
+    <h2 class="article-h2">What Makes a Decision "Unreasonable"?</h2>
+    <p>The governing standard comes from a landmark 2019 Supreme Court of Canada decision: <em>Canada (Minister of Citizenship and Immigration) v. Vavilov</em>, 2019 SCC 65. Under Vavilov, a decision is reasonable if it is "based on an internally coherent and rational chain of analysis" that is "justified in relation to the facts and law." In plain English: the officer must have considered the actual evidence in front of them, applied the correct legal test, and provided reasons that genuinely explain the outcome.</p>
+    <p>Decisions are commonly set aside on judicial review when:</p>
+    <ul>
+      <li>The officer applied the wrong legal test</li>
+      <li>The officer ignored key evidence without explanation</li>
+      <li>The officer's reasons were generic or template-based and didn't engage with the specific case</li>
+      <li>The officer made a factual finding that had no basis in the evidence</li>
+      <li>The officer failed to provide procedural fairness — for example, raising a concern about your application without giving you an opportunity to address it</li>
+    </ul>
+
+    <h2 class="article-h2">The 15-Day Deadline. This Is Critical.</h2>
+    <p>If you are in Canada and want to seek judicial review of an immigration decision, you have <strong style="color:#c9a84c;">15 days</strong> from receiving the decision to file a Notice of Application with the Federal Court. If you are outside Canada, the deadline is 60 days.</p>
+    <p>These are firm deadlines. Missing them — even by one day — almost always ends the matter. There is a process to seek an extension, but it is not guaranteed and requires demonstrating exceptional circumstances. The safest course is to contact a lawyer the moment you receive a refusal.</p>
+
+    <div class="callout-box">
+      <p>"The 15-day filing deadline begins the moment you receive your refusal. If your decision arrived by email, that clock starts today. Contact us immediately."</p>
+    </div>
+
+    <h2 class="article-h2">What Happens After You File?</h2>
+    <p>Filing a Notice of Application starts a two-stage process. First, you must obtain "leave" — permission from the Federal Court to proceed with the review. A single judge reviews the materials and decides whether there is an arguable case. This is a paper-based review; no hearing is held.</p>
+    <p>If leave is granted, the matter proceeds to a judicial review hearing before a Federal Court judge. You (through your counsel) and the government each file written legal arguments. A hearing is held, typically lasting 30 minutes to 2 hours. The judge then issues a decision, usually within weeks.</p>
+    <p>If the Court finds the decision was unreasonable or procedurally unfair, it sets the decision aside and remits the matter back to IRCC for redetermination by a different officer.</p>
+
+    <h2 class="article-h2">Is Judicial Review Right for Your Case?</h2>
+    <p>Not every refusal warrants a judicial review. The question is whether there is a genuine legal argument — not simply that you disagree with the outcome. Common cases where judicial review succeeds include:</p>
+    <ul>
+      <li>Study or visitor permit refusals where the officer failed to engage with specific evidence of ties to home country</li>
+      <li>Misrepresentation findings made without proper procedural fairness</li>
+      <li>Work permit refusals based on factual errors or incorrect application of IRCC policy</li>
+      <li>PR refusals in Express Entry where the officer mischaracterized the evidence</li>
+      <li>Stay of removal applications where irreparable harm to family members wasn't properly considered</li>
+    </ul>
+    <p>If you received a refusal and are not sure whether your case has merit for judicial review, a consultation with a lawyer who regularly practises before the Federal Court is the right first step.</p>
+
+    <h2 class="article-h2">A Note on Costs</h2>
+    <p>Judicial review is a formal legal proceeding. It requires experienced legal counsel, careful preparation of affidavits and legal submissions, and familiarity with Federal Court procedure. It is not an appropriate matter to handle without representation.</p>
+    <p>At Bansal Law, we assess every potential judicial review carefully before recommending the approach. We will tell you honestly whether your case has genuine prospects — and we will tell you equally honestly when we do not believe a judicial review is the right avenue.</p>
+
+    <!-- AUTHOR BIO -->
+    <div class="bg-navy-mid border border-white/10 rounded-2xl p-7 mt-12 flex items-start gap-5">
+      <div class="w-12 h-12 rounded-full bg-gold/10 border border-gold/25 flex items-center justify-center flex-shrink-0">
+        <i class="fa fa-balance-scale text-gold text-lg"></i>
+      </div>
+      <div>
+        <h4 class="font-serif text-lg font-bold text-white mb-2">Bansal Law — Barristers &amp; Solicitors</h4>
+        <p class="text-gray-400 text-sm leading-relaxed" style="font-size:0.9375rem; margin:0;">This article was prepared by the legal team at Bansal Law Professional Corporation, based in Brampton, Ontario. We practise exclusively in Canadian immigration law and litigation, including Federal Court judicial review proceedings.</p>
+      </div>
+    </div>
+
+  </article>
+
+  <!-- CTA SECTION -->
+  <section class="bg-navy-mid border-t border-white/5 py-20 px-4 md:px-10">
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="text-gold text-xs font-semibold tracking-widest uppercase mb-3">Bansal Law · Federal Court Practice</p>
+      <h2 class="font-serif text-3xl md:text-4xl font-bold text-white mb-4">Facing a Refusal?</h2>
+      <p class="text-gray-400 text-lg leading-relaxed mb-8">
+        If you've received an immigration refusal, time is the most important factor. Book a free consultation today.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="book-consultation.html" class="btn-gold px-8 py-3.5 rounded text-white inline-block">Book Consultation</a>
+        <a href="blog.html" class="btn-outline-gold px-8 py-3.5 rounded inline-block">Back to Blog</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-navy border-t border-white/5 py-10 px-4 md:px-10">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded border-2 border-gold flex items-center justify-center"><span class="text-gold font-serif font-black text-xs leading-none">BL</span></div>
+        <div>
+          <div class="text-white font-serif font-bold text-base leading-none">Bansal <span class="text-gold">Law</span></div>
+          <div class="text-gray-500 text-[9px] tracking-[0.15em] uppercase leading-none mt-0.5">Barristers &amp; Solicitors</div>
+        </div>
+      </a>
+      <div class="flex items-center gap-6 text-xs text-gray-500">
+        <a href="index.html" class="hover:text-gold transition-colors">Home</a>
+        <a href="index.html#services" class="hover:text-gold transition-colors">Services</a>
+        <a href="success-stories.html" class="hover:text-gold transition-colors">Success Stories</a>
+        <a href="blog.html" class="hover:text-gold transition-colors">Blog</a>
+        <a href="significant-cases.html" class="hover:text-gold transition-colors">Significant Cases</a>
+        <a href="index.html#contact" class="hover:text-gold transition-colors">Contact</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="https://www.instagram.com/bansal.law.pc/" target="_blank" rel="noopener" class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:border-gold hover:text-gold transition-all"><i class="fa-brands fa-instagram text-sm"></i></a>
+        <a href="https://www.facebook.com/immigration.oasis/" target="_blank" rel="noopener" class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:border-gold hover:text-gold transition-all"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto mt-8 pt-6 border-t border-white/5 text-center text-[11px] text-gray-600">
+      © 2024 Bansal Law Professional Corporation. All rights reserved. · 905-514-8000 · amit@bansallawyer.com
+    </div>
+  </footer>
+
+</body>
+</html>

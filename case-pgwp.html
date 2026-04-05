@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IRCC's Error Caught. PGWP Issued. — BL-2024-052 — Bansal Law</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#0f1923',
+            'navy-mid': '#1a2035',
+            'navy-light': '#1e2846',
+            gold: '#c9a84c',
+            'gold-light': '#d4b86a',
+            'gold-dark': '#a8882a',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; background: #0f1923; }
+    h1, h2, h3, h4, .serif { font-family: 'Playfair Display', Georgia, serif; }
+    .btn-gold { background: #c9a84c; color: #fff; font-weight: 600; letter-spacing: 0.05em; transition: background 0.2s, transform 0.2s; }
+    .btn-gold:hover { background: #a8882a; transform: translateY(-1px); }
+    .btn-outline-gold { border: 2px solid #c9a84c; color: #c9a84c; font-weight: 600; letter-spacing: 0.05em; transition: all 0.2s; }
+    .btn-outline-gold:hover { background: #c9a84c; color: #fff; transform: translateY(-1px); }
+    .gold-bar { display: block; width: 50px; height: 3px; background: #c9a84c; margin: 14px auto 0; }
+    .hero-bg { background: linear-gradient(135deg, #0f1923 0%, #1a2035 60%, #0f1923 100%); position: relative; overflow: hidden; }
+    .outcome-badge { display:inline-flex; align-items:center; gap:6px; background:rgba(201,168,76,0.12); border:1px solid rgba(201,168,76,0.35); color:#c9a84c; font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; padding:5px 12px; border-radius:999px; }
+    .roadmap-step { padding: 12px 16px; border-left: 2px solid rgba(201,168,76,0.2); margin-left: 8px; cursor: pointer; transition: all 0.2s; }
+    .roadmap-step.active, .roadmap-step:hover { border-left-color: #c9a84c; background: rgba(201,168,76,0.06); border-radius: 0 8px 8px 0; }
+    .roadmap-step.active .step-num { background: #c9a84c; color: #0f1923; }
+    .step-num { width: 24px; height: 24px; border-radius: 50%; background: rgba(201,168,76,0.15); color: #c9a84c; font-size: 11px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: all 0.2s; }
+    .step-num-inline { display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:50%; background:rgba(201,168,76,0.15); color:#c9a84c; font-size:11px; font-weight:700; flex-shrink:0; }
+  </style>
+</head>
+<body class="bg-navy text-gray-300">
+
+  <!-- TOP BAR -->
+  <div class="bg-navy py-2 px-4 md:px-10 border-b border-white/5">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-gray-400">
+      <div class="flex items-center gap-5">
+        <span class="flex items-center gap-1.5"><i class="fa fa-map-marker-alt text-gold"></i> Brampton, ON</span>
+        <span class="hidden sm:flex items-center gap-1.5"><i class="fa fa-clock text-gold"></i> Mon–Fri 9:30 AM – 5:30 PM · Sat 11:00 AM – 2:00 PM</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="mailto:amit@bansallawyer.com" class="flex items-center gap-1.5 hover:text-gold transition-colors"><i class="fa fa-envelope text-gold"></i> amit@bansallawyer.com</a>
+        <span class="text-white/20">|</span>
+        <a href="tel:19055148000" class="flex items-center gap-1.5 hover:text-gold transition-colors"><i class="fa fa-phone text-gold"></i> 905-514-8000</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav class="bg-navy-mid sticky top-0 z-50 shadow-lg py-4 px-4 md:px-10">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded border-2 border-gold flex items-center justify-center">
+          <span class="text-gold font-serif font-black text-sm leading-none">BL</span>
+        </div>
+        <div>
+          <div class="text-white font-serif font-bold text-lg leading-none tracking-wide">Bansal <span class="text-gold">Law</span></div>
+          <div class="text-gray-400 text-[9px] tracking-[0.18em] uppercase leading-none mt-0.5">Barristers &amp; Solicitors</div>
+        </div>
+      </a>
+      <div class="hidden lg:flex items-center gap-7 text-sm font-medium text-gray-300">
+        <a href="index.html#about" class="hover:text-gold transition-colors">About</a>
+        <a href="index.html#services" class="hover:text-gold transition-colors">Services</a>
+        <a href="index.html#team" class="hover:text-gold transition-colors">Our Team</a>
+        <a href="success-stories.html" class="hover:text-gold transition-colors">Success Stories</a>
+        <a href="blog.html" class="hover:text-gold transition-colors">Blog</a>
+        <a href="significant-cases.html" class="hover:text-gold transition-colors">Significant Cases</a>
+        <a href="index.html#contact" class="hover:text-gold transition-colors">Contact</a>
+        <a href="book-consultation.html" class="btn-gold px-5 py-2.5 rounded text-white text-sm">Book a Consultation</a>
+      </div>
+      <button class="lg:hidden text-gold text-xl"><i class="fa fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <!-- CASE HERO -->
+  <section class="hero-bg py-16 px-4 md:px-10">
+    <div class="max-w-5xl mx-auto">
+      <a href="success-stories.html" class="inline-flex items-center gap-2 text-gray-400 hover:text-gold transition-colors text-sm mb-8">
+        <i class="fa fa-arrow-left text-xs"></i> Back to All Cases
+      </a>
+      <div class="text-[11px] font-mono text-gray-500 tracking-widest uppercase mb-4">Case File · BL-2024-052</div>
+      <div class="inline-flex items-center gap-2 border border-gold/30 bg-gold/5 text-gold text-[10px] font-semibold tracking-[0.18em] uppercase px-3 py-1.5 rounded-full mb-6">
+        Post-Graduate Work Permit · IRCC Factual Error
+      </div>
+      <h1 class="font-serif font-bold text-4xl md:text-5xl text-white leading-tight mb-6">IRCC's Error Caught. PGWP Issued.</h1>
+      <div class="outcome-badge mb-6"><i class="fa fa-circle-check text-[9px]"></i> PGWP ISSUED</div>
+      <p class="text-gray-400 text-lg leading-relaxed max-w-2xl">
+        IRCC refused a post-graduate work permit based on an incorrect eligibility assessment of the applicant's institution — an error we identified, documented, and corrected.
+      </p>
+    </div>
+  </section>
+
+  <!-- BODY: TWO-COLUMN -->
+  <div class="max-w-7xl mx-auto px-4 md:px-10 py-12">
+    <div class="lg:grid lg:grid-cols-[280px_1fr] gap-12 items-start">
+
+      <!-- SIDEBAR -->
+      <aside class="hidden lg:block lg:sticky lg:top-[89px]">
+        <div class="bg-navy-mid border border-white/5 rounded-2xl p-6">
+          <div class="text-gold text-[10px] font-semibold tracking-widest uppercase mb-1">Navigation</div>
+          <h3 class="font-serif font-bold text-white text-xl mb-1">Legal Roadmap</h3>
+          <div class="w-8 h-0.5 bg-gold/50 mb-6"></div>
+          <nav class="space-y-1">
+            <div class="roadmap-step active flex items-center gap-3" data-target="situation">
+              <span class="step-num">1</span>
+              <span class="text-sm text-gray-300">The Situation</span>
+            </div>
+            <div class="roadmap-step flex items-center gap-3" data-target="mattered">
+              <span class="step-num">2</span>
+              <span class="text-sm text-gray-300">Why It Mattered</span>
+            </div>
+            <div class="roadmap-step flex items-center gap-3" data-target="approach">
+              <span class="step-num">3</span>
+              <span class="text-sm text-gray-300">Our Approach</span>
+            </div>
+            <div class="roadmap-step flex items-center gap-3" data-target="arguments">
+              <span class="step-num">4</span>
+              <span class="text-sm text-gray-300">Key Arguments</span>
+            </div>
+            <div class="roadmap-step flex items-center gap-3" data-target="outcome">
+              <span class="step-num">5</span>
+              <span class="text-sm text-gray-300">The Outcome</span>
+            </div>
+          </nav>
+        </div>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <main>
+        <section id="situation" class="py-16 border-b border-white/5">
+          <div class="flex items-center gap-3 mb-2">
+            <span class="step-num-inline">01</span>
+            <span class="text-gold text-[10px] font-semibold tracking-widest uppercase">The Situation</span>
+          </div>
+          <h2 class="text-white font-serif font-bold text-3xl mb-6">Graduated. Refused. Wrongly.</h2>
+          <div class="text-gray-300 space-y-4 text-base leading-relaxed">
+            <p>Our client had spent four years completing a business administration diploma at a Canadian college. She had complied with every condition of her study permit, maintained full-time enrollment, and graduated on time. Her post-graduate work permit application was straightforward.</p>
+            <p>Except that IRCC refused it. The reason given: her institution's program was "not eligible" under the PGWP rules. The problem was that IRCC was wrong.</p>
+          </div>
+        </section>
+
+        <section id="mattered" class="py-16 border-b border-white/5">
+          <div class="flex items-center gap-3 mb-2">
+            <span class="step-num-inline">02</span>
+            <span class="text-gold text-[10px] font-semibold tracking-widest uppercase">Why It Mattered</span>
+          </div>
+          <h2 class="text-white font-serif font-bold text-3xl mb-6">A PGWP Is a Gateway — Not Just a Permit</h2>
+          <div class="text-gray-300 space-y-4 text-base leading-relaxed">
+            <p>The post-graduate work permit is designed to allow international graduates to gain Canadian work experience and, in most cases, transition to permanent residency through programs like Canadian Experience Class. Refusing a PGWP doesn't just delay a work permit — it severs the graduate's pathway to permanent residency entirely.</p>
+            <p>For our client, who had spent four years and significant money building toward that goal, a wrongful refusal threatened to undo everything.</p>
+          </div>
+        </section>
+
+        <section id="approach" class="py-16 border-b border-white/5">
+          <div class="flex items-center gap-3 mb-2">
+            <span class="step-num-inline">03</span>
+            <span class="text-gold text-[10px] font-semibold tracking-widest uppercase">Our Approach</span>
+          </div>
+          <h2 class="text-white font-serif font-bold text-3xl mb-6">We Went to the Source</h2>
+          <div class="text-gray-300 space-y-4 text-base leading-relaxed">
+            <p>The PGWP program requires that an applicant's institution be a Designated Learning Institution (DLI) with degree-granting authority or specific college-level designation at the time of study. IRCC's refusal letter asserted that our client's program did not meet this requirement.</p>
+            <p>We contacted the institution's international student office, requested formal written confirmation of their DLI designation status for the relevant academic period, and obtained the designation records from the relevant provincial ministry. What those records showed was clear: the program had full DLI eligibility at every relevant point during our client's enrollment. IRCC had assessed the wrong program, or relied on outdated information.</p>
+          </div>
+        </section>
+
+        <section id="arguments" class="py-16 border-b border-white/5">
+          <div class="flex items-center gap-3 mb-2">
+            <span class="step-num-inline">04</span>
+            <span class="text-gold text-[10px] font-semibold tracking-widest uppercase">Key Arguments</span>
+          </div>
+          <h2 class="text-white font-serif font-bold text-3xl mb-6">IRCC's Factual Finding Was Simply Incorrect</h2>
+          <div class="text-gray-300 space-y-4 text-base leading-relaxed">
+            <p>We prepared a comprehensive reapplication package — rather than a judicial review — because the error was factual rather than legal. We included a legal submissions letter that cited the specific DLI designation records, the provincial authorization documents, the institution's formal confirmation letter, and the relevant IRCC operational instructions confirming the program's eligibility.</p>
+            <p>We directly addressed the basis for refusal, line by line, and demonstrated that each of IRCC's stated concerns was contradicted by the documentary record. We also filed a web form submission to IRCC with a summary of the error, flagging it for priority processing review.</p>
+          </div>
+        </section>
+
+        <section id="outcome" class="py-16">
+          <div class="flex items-center gap-3 mb-2">
+            <span class="step-num-inline">05</span>
+            <span class="text-gold text-[10px] font-semibold tracking-widest uppercase">The Outcome</span>
+          </div>
+          <h2 class="text-white font-serif font-bold text-3xl mb-6">PGWP Issued. Pathway to PR Intact.</h2>
+          <div class="text-gray-300 space-y-4 text-base leading-relaxed">
+            <p>IRCC processed the reapplication and issued the post-graduate work permit. Our client began working in her field within weeks of approval.</p>
+            <p>She is now accumulating the Canadian work experience required for Express Entry and is on track for a permanent residency application within the target timeline she had originally planned for when she chose to study in Canada.</p>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <!-- OUTCOME SUMMARY BOX -->
+  <div class="px-4 md:px-10 pb-12">
+    <div class="max-w-7xl mx-auto">
+      <div class="bg-navy-mid border border-gold/25 rounded-2xl p-8 md:p-10">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-10 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center flex-shrink-0">
+            <i class="fa fa-trophy text-gold text-sm"></i>
+          </div>
+          <h3 class="font-serif font-bold text-white text-2xl">What Was Achieved</h3>
+        </div>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-3 text-gray-300 text-sm"><i class="fa fa-circle-check text-gold mt-0.5 flex-shrink-0"></i> IRCC eligibility error identified and documented</li>
+          <li class="flex items-start gap-3 text-gray-300 text-sm"><i class="fa fa-circle-check text-gold mt-0.5 flex-shrink-0"></i> DLI designation records obtained from provincial authority</li>
+          <li class="flex items-start gap-3 text-gray-300 text-sm"><i class="fa fa-circle-check text-gold mt-0.5 flex-shrink-0"></i> Reapplication filed with comprehensive legal submissions</li>
+          <li class="flex items-start gap-3 text-gray-300 text-sm"><i class="fa fa-circle-check text-gold mt-0.5 flex-shrink-0"></i> Post-graduate work permit issued</li>
+          <li class="flex items-start gap-3 text-gray-300 text-sm"><i class="fa fa-circle-check text-gold mt-0.5 flex-shrink-0"></i> Express Entry and PR pathway fully intact</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- IS YOUR CASE SIMILAR? -->
+  <section class="py-16 px-4 md:px-10 bg-navy-mid border-t border-white/5">
+    <div class="max-w-3xl mx-auto text-center">
+      <div class="inline-flex items-center gap-2 border border-gold/30 bg-gold/5 text-gold text-[10px] font-semibold tracking-[0.2em] uppercase px-4 py-2 rounded-full mb-6">
+        <i class="fa fa-circle-question text-[9px]"></i>
+        Is Your Case Similar?
+      </div>
+      <h2 class="font-serif font-bold text-3xl text-white mb-5">PGWP Refused on Eligibility Grounds?</h2>
+      <p class="text-gray-400 text-base leading-relaxed mb-8 max-w-xl mx-auto">
+        If your post-graduate work permit was refused on eligibility grounds, it may be based on an error — not your application. We review PGWP refusals and have successfully corrected IRCC's factual assessments. Get a consultation before you give up on your PR pathway.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="book-consultation.html" class="btn-gold px-8 py-3.5 rounded text-white text-sm inline-block">Book Free Consultation</a>
+        <a href="tel:19055148000" class="btn-outline-gold px-8 py-3.5 rounded text-sm inline-flex items-center gap-2">
+          <i class="fa fa-phone text-sm"></i> Call 905-514-8000
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-navy border-t border-white/5 py-10 px-4 md:px-10">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded border-2 border-gold flex items-center justify-center">
+          <span class="text-gold font-serif font-black text-xs leading-none">BL</span>
+        </div>
+        <div>
+          <div class="text-white font-serif font-bold text-base leading-none">Bansal <span class="text-gold">Law</span></div>
+          <div class="text-gray-500 text-[9px] tracking-[0.15em] uppercase leading-none mt-0.5">Barristers &amp; Solicitors</div>
+        </div>
+      </a>
+      <div class="flex items-center gap-6 text-xs text-gray-500">
+        <a href="index.html" class="hover:text-gold transition-colors">Home</a>
+        <a href="index.html#services" class="hover:text-gold transition-colors">Services</a>
+        <a href="success-stories.html" class="hover:text-gold transition-colors">Success Stories</a>
+        <a href="blog.html" class="hover:text-gold transition-colors">Blog</a>
+        <a href="significant-cases.html" class="hover:text-gold transition-colors">Significant Cases</a>
+        <a href="index.html#contact" class="hover:text-gold transition-colors">Contact</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="https://www.instagram.com/bansal.law.pc/" target="_blank" rel="noopener" class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:border-gold hover:text-gold transition-all"><i class="fa-brands fa-instagram text-sm"></i></a>
+        <a href="https://www.facebook.com/immigration.oasis/" target="_blank" rel="noopener" class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:border-gold hover:text-gold transition-all"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto mt-8 pt-6 border-t border-white/5 text-center text-[11px] text-gray-600">
+      © 2024 Bansal Law Professional Corporation. All rights reserved. · 905-514-8000 · amit@bansallawyer.com
+    </div>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('section[id]');
+    const steps = document.querySelectorAll('.roadmap-step[data-target]');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          steps.forEach(s => s.classList.remove('active'));
+          const active = document.querySelector(`.roadmap-step[data-target="${entry.target.id}"]`);
+          if (active) active.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-20% 0px -60% 0px' });
+    sections.forEach(s => observer.observe(s));
+    steps.forEach(s => s.addEventListener('click', () => {
+      document.getElementById(s.dataset.target)?.scrollIntoView({ behavior: 'smooth' });
+    }));
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Free Consultation — Bansal Law</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#0f1923',
+            'navy-mid': '#1a2035',
+            'navy-light': '#1e2846',
+            gold: '#c9a84c',
+            'gold-light': '#d4b86a',
+            'gold-dark': '#a8882a'
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; background: #0f1923; }
+    h1, h2, h3, h4, .serif { font-family: 'Playfair Display', Georgia, serif; }
+    .btn-gold { background: #c9a84c; color: #fff; font-weight: 600; letter-spacing: 0.05em; transition: background 0.2s, transform 0.2s; }
+    .btn-gold:hover { background: #a8882a; transform: translateY(-1px); }
+    .btn-outline-gold { border: 2px solid #c9a84c; color: #c9a84c; font-weight: 600; letter-spacing: 0.05em; transition: all 0.2s; }
+    .btn-outline-gold:hover { background: #c9a84c; color: #fff; transform: translateY(-1px); }
+  </style>
+</head>
+<body class="bg-navy text-gray-200">
+
+  <!-- TOP BAR -->
+  <div class="bg-navy py-2 px-4 md:px-10 border-b border-white/5">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-gray-400">
+      <div class="flex items-center gap-5">
+        <span class="flex items-center gap-1.5"><i class="fa fa-map-marker-alt text-gold"></i> Brampton, ON</span>
+        <span class="hidden sm:flex items-center gap-1.5"><i class="fa fa-clock text-gold"></i> Mon–Fri 9:30 AM – 5:30 PM · Sat 11:00 AM – 2:00 PM</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="mailto:amit@bansallawyer.com" class="flex items-center gap-1.5 hover:text-gold transition-colors"><i class="fa fa-envelope text-gold"></i> amit@bansallawyer.com</a>
+        <span class="text-white/20">|</span>
+        <a href="tel:19055148000" class="flex items-center gap-1.5 hover:text-gold transition-colors"><i class="fa fa-phone text-gold"></i> 905-514-8000</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav class="bg-navy-mid sticky top-0 z-50 shadow-lg py-4 px-4 md:px-10">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded border-2 border-gold flex items-center justify-center"><span class="text-gold font-serif font-black text-sm leading-none">BL</span></div>
+        <div>
+          <div class="text-white font-serif font-bold text-lg leading-none tracking-wide">Bansal <span class="text-gold">Law</span></div>
+          <div class="text-gray-400 text-[9px] tracking-[0.18em] uppercase leading-none mt-0.5">Barristers &amp; Solicitors</div>
+        </div>
+      </a>
+      <div class="hidden lg:flex items-center gap-7 text-sm font-medium text-gray-300">
+        <a href="index.html#about" class="hover:text-gold transition-colors">About</a>
+        <a href="index.html#services" class="hover:text-gold transition-colors">Services</a>
+        <a href="index.html#team" class="hover:text-gold transition-colors">Our Team</a>
+        <a href="success-stories.html" class="hover:text-gold transition-colors">Success Stories</a>
+        <a href="blog.html" class="hover:text-gold transition-colors">Blog</a>
+        <a href="significant-cases.html" class="hover:text-gold transition-colors">Significant Cases</a>
+        <a href="index.html#contact" class="hover:text-gold transition-colors">Contact</a>
+        <a href="book-consultation.html" class="btn-gold px-5 py-2.5 rounded text-white text-sm">Book a Consultation</a>
+      </div>
+      <button class="lg:hidden text-gold text-xl"><i class="fa fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section style="background: linear-gradient(135deg, #0f1923 0%, #1a2035 60%, #0f1923 100%); position: relative; overflow: hidden;">
+    <!-- Decorative rings -->
+    <div style="position:absolute;top:-120px;right:-120px;width:480px;height:480px;border-radius:50%;border:1px solid rgba(201,168,76,0.08);pointer-events:none;"></div>
+    <div style="position:absolute;top:-60px;right:-60px;width:320px;height:320px;border-radius:50%;border:1px solid rgba(201,168,76,0.06);pointer-events:none;"></div>
+    <div style="position:absolute;bottom:-80px;left:-80px;width:360px;height:360px;border-radius:50%;border:1px solid rgba(201,168,76,0.06);pointer-events:none;"></div>
+
+    <div class="max-w-7xl mx-auto px-4 md:px-10 py-20 md:py-28 relative z-10">
+      <div class="max-w-3xl mx-auto text-center">
+
+        <!-- Gold badge pill -->
+        <div class="inline-flex items-center gap-2 bg-gold/10 border border-gold/25 text-gold text-xs font-semibold px-4 py-2 rounded-full mb-7 tracking-wide uppercase">
+          <i class="fa fa-calendar-check"></i>
+          Free Consultation · Book Online
+        </div>
+
+        <!-- H1 -->
+        <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+          Book Your Free Consultation
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="text-gray-400 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-10">
+          Choose a time that works for you. Your first consultation is completely free and confidential — no obligation, no pressure. Just honest advice.
+        </p>
+
+        <!-- Trust row -->
+        <div class="flex flex-wrap items-center justify-center gap-6 md:gap-10">
+          <div class="flex items-center gap-2 text-sm text-gray-300">
+            <div class="w-8 h-8 rounded-full bg-gold/15 flex items-center justify-center">
+              <i class="fa fa-gift text-gold text-xs"></i>
+            </div>
+            <span class="font-medium">Free Consultation</span>
+          </div>
+          <div class="flex items-center gap-2 text-sm text-gray-300">
+            <div class="w-8 h-8 rounded-full bg-gold/15 flex items-center justify-center">
+              <i class="fa fa-lock text-gold text-xs"></i>
+            </div>
+            <span class="font-medium">100% Confidential</span>
+          </div>
+          <div class="flex items-center gap-2 text-sm text-gray-300">
+            <div class="w-8 h-8 rounded-full bg-gold/15 flex items-center justify-center">
+              <i class="fa fa-shield-halved text-gold text-xs"></i>
+            </div>
+            <span class="font-medium">No Obligation</span>
+          </div>
+          <div class="flex items-center gap-2 text-sm text-gray-300">
+            <div class="w-8 h-8 rounded-full bg-gold/15 flex items-center justify-center">
+              <i class="fa fa-bolt text-gold text-xs"></i>
+            </div>
+            <span class="font-medium">Same-Day Response</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS SECTION -->
+  <section style="background: #1a2035;" class="py-16 md:py-20 px-4 md:px-10">
+    <div class="max-w-7xl mx-auto">
+
+      <!-- Section title -->
+      <div class="text-center mb-12">
+        <p class="text-gold text-xs font-semibold tracking-[0.2em] uppercase mb-3">Simple Process</p>
+        <h2 class="font-serif text-3xl md:text-4xl font-bold text-white mb-4">How It Works</h2>
+        <div class="w-12 h-0.5 bg-gold mx-auto"></div>
+      </div>
+
+      <!-- 3 Steps -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+
+        <!-- Step 1 -->
+        <div class="bg-navy rounded-xl p-8 text-center border border-white/5 hover:border-gold/20 transition-colors">
+          <div class="w-16 h-16 rounded-full bg-gold/10 border border-gold/25 flex items-center justify-center mx-auto mb-6">
+            <i class="fa fa-calendar-plus text-gold text-2xl"></i>
+          </div>
+          <div class="w-7 h-7 rounded-full bg-gold flex items-center justify-center mx-auto mb-4 text-navy font-bold text-xs">1</div>
+          <h3 class="font-serif text-xl font-bold text-white mb-3">Choose Your Time</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">Browse available slots and select the date and time that works best for you.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="bg-navy rounded-xl p-8 text-center border border-white/5 hover:border-gold/20 transition-colors">
+          <div class="w-16 h-16 rounded-full bg-gold/10 border border-gold/25 flex items-center justify-center mx-auto mb-6">
+            <i class="fa fa-user-circle text-gold text-2xl"></i>
+          </div>
+          <div class="w-7 h-7 rounded-full bg-gold flex items-center justify-center mx-auto mb-4 text-navy font-bold text-xs">2</div>
+          <h3 class="font-serif text-xl font-bold text-white mb-3">Share Your Situation</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">Fill in a brief note about your case during booking so we can prepare for your call.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="bg-navy rounded-xl p-8 text-center border border-white/5 hover:border-gold/20 transition-colors">
+          <div class="w-16 h-16 rounded-full bg-gold/10 border border-gold/25 flex items-center justify-center mx-auto mb-6">
+            <i class="fa fa-building-columns text-gold text-2xl"></i>
+          </div>
+          <div class="w-7 h-7 rounded-full bg-gold flex items-center justify-center mx-auto mb-4 text-navy font-bold text-xs">3</div>
+          <h3 class="font-serif text-xl font-bold text-white mb-3">Come In to Meet Us</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">Consultations are held in person at our Brampton offices. Please call us at <span class="text-gold font-medium">905-514-8000</span> to confirm your appointment before arriving — we'll be ready for you.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CALENDLY EMBED SECTION -->
+  <section style="background: #0f1923;" class="py-16 md:py-20 px-4 md:px-10">
+    <div class="max-w-5xl mx-auto">
+
+      <!-- Section intro -->
+      <div class="text-center mb-10">
+        <p class="text-gold text-xs font-semibold tracking-[0.2em] uppercase mb-3">Schedule Your Consultation</p>
+        <h2 class="font-serif text-3xl md:text-4xl font-bold text-white mb-4">Select a Time</h2>
+        <div class="w-12 h-0.5 bg-gold mx-auto"></div>
+      </div>
+
+      <!-- Calendly widget -->
+      <div class="rounded-xl overflow-hidden border border-white/10">
+
+        <!-- ═══════════════════════════════════════════════════════════════════════
+             CALENDLY SETUP INSTRUCTIONS:
+             1. Go to https://calendly.com and sign up with amit@bansallawyer.com
+             2. Settings → Calendar Connections → Connect Google Calendar
+             3. Create an Event Type: "Free Consultation — Bansal Law" (30 min)
+                Set available hours: Mon–Fri 9:30–17:30, Sat 11:00–14:00
+                Add 15-min buffer between appointments
+             4. Share → Add to Website → Inline Embed → copy your Calendly URL
+             5. Replace YOUR_CALENDLY_URL below with your actual Calendly link
+                Example: https://calendly.com/bansal-law/free-consultation
+        ════════════════════════════════════════════════════════════════════════ -->
+        <div class="calendly-inline-widget"
+             data-url="https://calendly.com/info-oasisimmigration/30min?hide_gdpr_banner=1&background_color=1a2035&text_color=e5e7eb&primary_color=c9a84c"
+             style="min-width:320px;height:700px;"></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+      </div>
+
+      <!-- Confidentiality notice -->
+      <p class="text-center text-xs text-gray-500 mt-5 flex items-center justify-center gap-2">
+        <i class="fa fa-lock text-gold"></i>
+        All information shared during booking is 100% confidential and protected by solicitor-client privilege.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- ALTERNATIVE CONTACT STRIP -->
+  <section style="background: #0f1923;" class="pb-16 md:pb-20 px-4 md:px-10">
+    <div class="max-w-2xl mx-auto">
+      <div class="rounded-xl border border-gold/30 bg-navy-mid p-8 md:p-12 text-center">
+
+        <h3 class="font-serif text-2xl md:text-3xl font-bold text-white mb-3">Prefer to Call or Email?</h3>
+        <p class="text-gray-400 text-sm md:text-base leading-relaxed mb-8">
+          If you'd rather reach us directly, we're available during business hours.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-7">
+          <a href="tel:19055148000" class="btn-gold inline-flex items-center gap-2 px-7 py-3 rounded text-white text-sm">
+            <i class="fa fa-phone"></i>
+            Call 905-514-8000
+          </a>
+          <a href="index.html#contact" class="btn-outline-gold inline-flex items-center gap-2 px-7 py-3 rounded text-sm">
+            <i class="fa fa-envelope"></i>
+            Send a Message
+          </a>
+        </div>
+
+        <p class="text-gray-500 text-xs flex items-center justify-center gap-1.5">
+          <i class="fa fa-clock text-gold/60"></i>
+          Mon–Fri 9:30 AM – 5:30 PM · Sat 11:00 AM – 2:00 PM
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-navy border-t border-white/5 py-10 px-4 md:px-10">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded border-2 border-gold flex items-center justify-center"><span class="text-gold font-serif font-black text-xs leading-none">BL</span></div>
+        <div>
+          <div class="text-white font-serif font-bold text-base leading-none">Bansal <span class="text-gold">Law</span></div>
+          <div class="text-gray-500 text-[9px] tracking-[0.15em] uppercase leading-none mt-0.5">Barristers &amp; Solicitors</div>
+        </div>
+      </a>
+      <div class="flex items-center gap-6 text-xs text-gray-500">
+        <a href="index.html" class="hover:text-gold transition-colors">Home</a>
+        <a href="index.html#services" class="hover:text-gold transition-colors">Services</a>
+        <a href="success-stories.html" class="hover:text-gold transition-colors">Success Stories</a>
+        <a href="blog.html" class="hover:text-gold transition-colors">Blog</a>
+        <a href="significant-cases.html" class="hover:text-gold transition-colors">Significant Cases</a>
+        <a href="index.html#contact" class="hover:text-gold transition-colors">Contact</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="https://www.instagram.com/bansal.law.pc/" target="_blank" rel="noopener" class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:border-gold hover:text-gold transition-all"><i class="fa-brands fa-instagram text-sm"></i></a>
+        <a href="https://www.facebook.com/immigration.oasis/" target="_blank" rel="noopener" class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:border-gold hover:text-gold transition-all"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto mt-8 pt-6 border-t border-white/5 text-center text-[11px] text-gray-600">
+      © 2024 Bansal Law Professional Corporation. All rights reserved. · 905-514-8000 · amit@bansallawyer.com
+    </div>
+  </footer>
+
+</body>
+</html>

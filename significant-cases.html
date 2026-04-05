@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Significant Cases — Bansal Law</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#0f1923',
+            'navy-mid': '#1a2035',
+            'navy-light': '#1e2846',
+            gold: '#c9a84c',
+            'gold-light': '#d4b86a',
+            'gold-dark': '#a8882a',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; background: #0f1923; }
+    h1, h2, h3, h4 { font-family: 'Playfair Display', Georgia, serif; }
+    .btn-gold { background: #c9a84c; color: #fff; font-weight: 600; letter-spacing: 0.05em; transition: background 0.2s, transform 0.2s; }
+    .btn-gold:hover { background: #a8882a; transform: translateY(-1px); }
+    .btn-outline-gold { border: 2px solid #c9a84c; color: #c9a84c; font-weight: 600; letter-spacing: 0.05em; transition: all 0.2s; }
+    .btn-outline-gold:hover { background: #c9a84c; color: #fff; transform: translateY(-1px); }
+    .gold-bar { display: block; width: 50px; height: 3px; background: #c9a84c; margin: 14px auto 0; }
+    .hero-bg { background: linear-gradient(135deg, #0f1923 0%, #1a2035 60%, #0f1923 100%); position: relative; overflow: hidden; }
+    .case-ref-card {
+      background: #1a2035;
+      border: 1px solid rgba(201,168,76,0.15);
+      border-radius: 16px;
+      padding: 32px;
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+    .case-ref-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(201,168,76,0.55);
+      box-shadow: 0 16px 48px rgba(201,168,76,0.10);
+    }
+    .gold-rule { height: 1px; background: rgba(201,168,76,0.2); margin: 18px 0; }
+    .label-upper { color: #c9a84c; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 700; margin-bottom: 6px; display: block; }
+    .tag-pill { display: inline-block; background: rgba(201,168,76,0.10); border: 1px solid rgba(201,168,76,0.25); color: rgba(201,168,76,0.85); font-size: 10px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; padding: 3px 10px; border-radius: 999px; margin: 3px 2px; }
+  </style>
+</head>
+<body class="bg-navy text-gray-300">
+
+  <!-- TOP BAR -->
+  <div class="bg-navy py-2 px-4 md:px-10 border-b border-white/5">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-gray-400">
+      <div class="flex items-center gap-5">
+        <span class="flex items-center gap-1.5"><i class="fa fa-map-marker-alt text-gold"></i> Brampton, ON</span>
+        <span class="hidden sm:flex items-center gap-1.5"><i class="fa fa-clock text-gold"></i> Mon–Fri 9:30 AM – 5:30 PM · Sat 11:00 AM – 2:00 PM</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="mailto:amit@bansallawyer.com" class="flex items-center gap-1.5 hover:text-gold transition-colors"><i class="fa fa-envelope text-gold"></i> amit@bansallawyer.com</a>
+        <span class="text-white/20">|</span>
+        <a href="tel:19055148000" class="flex items-center gap-1.5 hover:text-gold transition-colors"><i class="fa fa-phone text-gold"></i> 905-514-8000</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav class="bg-navy-mid sticky top-0 z-50 shadow-lg py-4 px-4 md:px-10">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded border-2 border-gold flex items-center justify-center"><span class="text-gold font-serif font-black text-sm leading-none">BL</span></div>
+        <div>
+          <div class="text-white font-serif font-bold text-lg leading-none tracking-wide">Bansal <span class="text-gold">Law</span></div>
+          <div class="text-gray-400 text-[9px] tracking-[0.18em] uppercase leading-none mt-0.5">Barristers &amp; Solicitors</div>
+        </div>
+      </a>
+      <div class="hidden lg:flex items-center gap-7 text-sm font-medium text-gray-300">
+        <a href="index.html#about" class="hover:text-gold transition-colors">About</a>
+        <a href="index.html#services" class="hover:text-gold transition-colors">Services</a>
+        <a href="index.html#team" class="hover:text-gold transition-colors">Our Team</a>
+        <a href="success-stories.html" class="hover:text-gold transition-colors">Success Stories</a>
+        <a href="blog.html" class="hover:text-gold transition-colors">Blog</a>
+        <a href="significant-cases.html" class="text-gold">Significant Cases</a>
+        <a href="index.html#contact" class="hover:text-gold transition-colors">Contact</a>
+        <a href="book-consultation.html" class="btn-gold px-5 py-2.5 rounded text-white text-sm">Book a Consultation</a>
+      </div>
+      <button class="lg:hidden text-gold text-xl"><i class="fa fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-bg py-20 px-4 md:px-10">
+    <div class="max-w-4xl mx-auto text-center">
+      <div class="inline-flex items-center gap-2 border border-gold/30 bg-gold/5 text-gold text-[10px] font-semibold tracking-[0.18em] uppercase px-4 py-2 rounded-full mb-8">
+        <i class="fa fa-landmark"></i> Case Law Reference · Bansal Law
+      </div>
+      <h1 class="font-serif font-bold text-4xl md:text-5xl lg:text-6xl text-white leading-tight mb-6">
+        The Cases That Shaped<br /><span class="text-gold">Canadian Immigration Law</span>
+      </h1>
+      <p class="text-gray-400 text-lg leading-relaxed max-w-3xl mx-auto">
+        These are the Supreme Court and Federal Court decisions that define how immigration officers must act, how their decisions are reviewed, and what rights applicants have. Understanding this case law is the foundation of understanding your options.
+      </p>
+    </div>
+  </section>
+
+  <!-- INTRO STRIP -->
+  <div class="bg-navy-mid py-10 px-4 md:px-10">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="text-center px-4">
+        <div class="w-12 h-12 rounded-full bg-gold/10 border border-gold/20 flex items-center justify-center mx-auto mb-4">
+          <i class="fa fa-gavel text-gold text-lg"></i>
+        </div>
+        <h3 class="font-serif font-bold text-white text-lg mb-3">Why Case Law Matters</h3>
+        <p class="text-gray-400 text-sm leading-relaxed">Court decisions create binding rules that every IRCC officer must follow. When those rules aren't followed, the decision can be challenged.</p>
+      </div>
+      <div class="text-center px-4">
+        <div class="w-12 h-12 rounded-full bg-gold/10 border border-gold/20 flex items-center justify-center mx-auto mb-4">
+          <i class="fa fa-book-open text-gold text-lg"></i>
+        </div>
+        <h3 class="font-serif font-bold text-white text-lg mb-3">How to Use This Page</h3>
+        <p class="text-gray-400 text-sm leading-relaxed">Each case summary explains what was decided, in plain English, and how it may be relevant to your own immigration matter.</p>
+      </div>
+      <div class="text-center px-4">
+        <div class="w-12 h-12 rounded-full bg-gold/10 border border-gold/20 flex items-center justify-center mx-auto mb-4">
+          <i class="fa fa-shield-halved text-gold text-lg"></i>
+        </div>
+        <h3 class="font-serif font-bold text-white text-lg mb-3">Know Your Rights</h3>
+        <p class="text-gray-400 text-sm leading-relaxed">Many applicants don't know the legal protections that already exist. These cases are the source of those protections.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CASES GRID -->
+  <section class="py-16 px-4 md:px-10">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+      <!-- Case 1: Vavilov -->
+      <div class="case-ref-card">
+        <div class="flex items-center gap-3">
+          <span class="font-mono bg-navy border border-gold/20 text-gold/80 text-[10px] px-3 py-1 rounded">2019 SCC 65</span>
+          <span class="bg-gold text-navy text-xs font-bold px-3 py-1 rounded">2019</span>
+        </div>
+        <h2 class="font-serif font-bold text-xl text-white mt-4 mb-2">Canada (MCI) v. Vavilov</h2>
+        <p class="text-gray-500 text-xs mb-4">Supreme Court of Canada</p>
+        <div class="gold-rule"></div>
+        <span class="label-upper">What Was Decided</span>
+        <p class="text-white text-base mb-5 leading-snug">Redefined the standard of "reasonableness" review — every immigration decision must be justified by coherent, transparent reasoning responsive to the evidence actually submitted.</p>
+        <span class="label-upper">What It Means For You</span>
+        <p class="text-gray-300 text-sm leading-relaxed mb-3">Before Vavilov, officers could issue vague refusals and courts would fill in the gaps. Now, an officer who ignores your evidence or issues a boilerplate refusal is vulnerable to having that decision set aside. The decision you receive must actually reflect what you submitted.</p>
+        <div class="mt-5 pt-4 border-t border-white/5">
+          <span class="tag-pill">All Refusals</span>
+          <span class="tag-pill">Judicial Review</span>
+          <span class="tag-pill">Study Permits</span>
+          <span class="tag-pill">Visitor Visas</span>
+          <span class="tag-pill">Express Entry</span>
+          <span class="tag-pill">Work Permits</span>
+        </div>
+      </div>
+
+      <!-- Case 2: Baker -->
+      <div class="case-ref-card">
+        <div class="flex items-center gap-3">
+          <span class="font-mono bg-navy border border-gold/20 text-gold/80 text-[10px] px-3 py-1 rounded">[1999] 2 SCR 817</span>
+          <span class="bg-gold text-navy text-xs font-bold px-3 py-1 rounded">1999</span>
+        </div>
+        <h2 class="font-serif font-bold text-xl text-white mt-4 mb-2">Baker v. Canada (MCI)</h2>
+        <p class="text-gray-500 text-xs mb-4">Supreme Court of Canada</p>
+        <div class="gold-rule"></div>
+        <span class="label-upper">What Was Decided</span>
+        <p class="text-white text-base mb-5 leading-snug">Established that the best interests of children are a primary consideration in humanitarian and compassionate applications, and that procedural fairness applies across immigration decision-making.</p>
+        <span class="label-upper">What It Means For You</span>
+        <p class="text-gray-300 text-sm leading-relaxed mb-3">If you have Canadian-born or Canadian children, their welfare and their interest in maintaining a relationship with you must be genuinely considered — not just acknowledged — in any H&amp;C decision. Baker also established that immigration decisions can be reviewed for procedural fairness, opening the door to Federal Court challenges when applicants are denied a fair process.</p>
+        <div class="mt-5 pt-4 border-t border-white/5">
+          <span class="tag-pill">H&amp;C Applications</span>
+          <span class="tag-pill">Removal Orders</span>
+          <span class="tag-pill">Family Class</span>
+          <span class="tag-pill">Spousal Sponsorship</span>
+        </div>
+      </div>
+
+      <!-- Case 3: Singh -->
+      <div class="case-ref-card">
+        <div class="flex items-center gap-3">
+          <span class="font-mono bg-navy border border-gold/20 text-gold/80 text-[10px] px-3 py-1 rounded">[1985] 1 SCR 177</span>
+          <span class="bg-gold text-navy text-xs font-bold px-3 py-1 rounded">1985</span>
+        </div>
+        <h2 class="font-serif font-bold text-xl text-white mt-4 mb-2">Singh v. MEI</h2>
+        <p class="text-gray-500 text-xs mb-4">Supreme Court of Canada</p>
+        <div class="gold-rule"></div>
+        <span class="label-upper">What Was Decided</span>
+        <p class="text-white text-base mb-5 leading-snug">Refugee claimants are "persons" under section 7 of the Canadian Charter of Rights and Freedoms and are entitled to a fair hearing before their claims are decided.</p>
+        <span class="label-upper">What It Means For You</span>
+        <p class="text-gray-300 text-sm leading-relaxed mb-3">Singh established that the Charter protects not just Canadian citizens but everyone in Canada — including refugee claimants — when their life, liberty, or security is at stake. The right to an oral hearing, properly conducted, flows from this decision. It remains one of the most consequential Charter rulings in Canadian immigration history.</p>
+        <div class="mt-5 pt-4 border-t border-white/5">
+          <span class="tag-pill">Refugee Claims</span>
+          <span class="tag-pill">Detention</span>
+          <span class="tag-pill">Charter Rights</span>
+          <span class="tag-pill">Deportation Defence</span>
+        </div>
+      </div>
+
+      <!-- Case 4: Dunsmuir -->
+      <div class="case-ref-card">
+        <div class="flex items-center gap-3">
+          <span class="font-mono bg-navy border border-gold/20 text-gold/80 text-[10px] px-3 py-1 rounded">2008 SCC 9</span>
+          <span class="bg-gold text-navy text-xs font-bold px-3 py-1 rounded">2008</span>
+        </div>
+        <h2 class="font-serif font-bold text-xl text-white mt-4 mb-2">Dunsmuir v. New Brunswick</h2>
+        <p class="text-gray-500 text-xs mb-4">Supreme Court of Canada</p>
+        <div class="gold-rule"></div>
+        <span class="label-upper">What Was Decided</span>
+        <p class="text-white text-base mb-5 leading-snug">Established the two-standard framework for judicial review — reasonableness and correctness — that governed Canadian administrative law until it was reorganized by Vavilov in 2019.</p>
+        <span class="label-upper">What It Means For You</span>
+        <p class="text-gray-300 text-sm leading-relaxed mb-3">Dunsmuir is the predecessor to Vavilov. While Vavilov has now replaced much of its framework, Dunsmuir remains cited frequently because of its core principles: that courts must respect the expertise of administrative decision-makers while ensuring those decisions remain within legal bounds. Understanding Dunsmuir helps understand why Vavilov was necessary.</p>
+        <div class="mt-5 pt-4 border-t border-white/5">
+          <span class="tag-pill">Judicial Review</span>
+          <span class="tag-pill">Administrative Law</span>
+          <span class="tag-pill">Appeals</span>
+        </div>
+      </div>
+
+      <!-- Case 5: Kanthasamy -->
+      <div class="case-ref-card">
+        <div class="flex items-center gap-3">
+          <span class="font-mono bg-navy border border-gold/20 text-gold/80 text-[10px] px-3 py-1 rounded">2015 SCC 61</span>
+          <span class="bg-gold text-navy text-xs font-bold px-3 py-1 rounded">2015</span>
+        </div>
+        <h2 class="font-serif font-bold text-xl text-white mt-4 mb-2">Kanthasamy v. Canada</h2>
+        <p class="text-gray-500 text-xs mb-4">Supreme Court of Canada</p>
+        <div class="gold-rule"></div>
+        <span class="label-upper">What Was Decided</span>
+        <p class="text-white text-base mb-5 leading-snug">Clarified that H&amp;C decision-makers must consider all hardship factors holistically — not apply them as rigid categories — and that the standard is "would a reasonable person consider the circumstances unusual, undeserved, or disproportionate."</p>
+        <span class="label-upper">What It Means For You</span>
+        <p class="text-gray-300 text-sm leading-relaxed mb-3">Before Kanthasamy, many H&amp;C applications were refused because officers evaluated hardship factors in silos rather than cumulatively. The Supreme Court said that the whole picture matters — circumstances that might not qualify independently can collectively paint a picture of genuine hardship that deserves relief. This case strengthened H&amp;C applications significantly, particularly for long-term residents facing removal.</p>
+        <div class="mt-5 pt-4 border-t border-white/5">
+          <span class="tag-pill">H&amp;C Applications</span>
+          <span class="tag-pill">Removal Orders</span>
+          <span class="tag-pill">Long-Term Residents</span>
+        </div>
+      </div>
+
+      <!-- Case 6: Chaudhary -->
+      <div class="case-ref-card">
+        <div class="flex items-center gap-3">
+          <span class="font-mono bg-navy border border-gold/20 text-gold/80 text-[10px] px-3 py-1 rounded">2015 ONCA 700</span>
+          <span class="bg-gold text-navy text-xs font-bold px-3 py-1 rounded">2015</span>
+        </div>
+        <h2 class="font-serif font-bold text-xl text-white mt-4 mb-2">Chaudhary v. Canada</h2>
+        <p class="text-gray-500 text-xs mb-4">Ontario Court of Appeal</p>
+        <div class="gold-rule"></div>
+        <span class="label-upper">What Was Decided</span>
+        <p class="text-white text-base mb-5 leading-snug">Immigration detainees in Canada can apply for habeas corpus in provincial superior courts, even where they have access to detention reviews under IRPA.</p>
+        <span class="label-upper">What It Means For You</span>
+        <p class="text-gray-300 text-sm leading-relaxed mb-3">Before Chaudhary, the government argued that the Immigration Division's detention review process was the only avenue for challenging immigration detention. The Ontario Court of Appeal disagreed. Chaudhary established that the common law writ of habeas corpus — the ancient right to challenge unlawful detention — remains available to immigration detainees. This matters most in cases of prolonged detention or when the Immigration Division process has failed.</p>
+        <div class="mt-5 pt-4 border-t border-white/5">
+          <span class="tag-pill">Immigration Detention</span>
+          <span class="tag-pill">CBSA</span>
+          <span class="tag-pill">Habeas Corpus</span>
+          <span class="tag-pill">Detention Reviews</span>
+        </div>
+      </div>
+
+      <!-- Case 7: Thamotharem -->
+      <div class="case-ref-card">
+        <div class="flex items-center gap-3">
+          <span class="font-mono bg-navy border border-gold/20 text-gold/80 text-[10px] px-3 py-1 rounded">2007 FCA 198</span>
+          <span class="bg-gold text-navy text-xs font-bold px-3 py-1 rounded">2007</span>
+        </div>
+        <h2 class="font-serif font-bold text-xl text-white mt-4 mb-2">Thamotharem v. Canada</h2>
+        <p class="text-gray-500 text-xs mb-4">Federal Court of Appeal</p>
+        <div class="gold-rule"></div>
+        <span class="label-upper">What Was Decided</span>
+        <p class="text-white text-base mb-5 leading-snug">Procedural guidelines issued by the Refugee Protection Division that restricted how claimants could be questioned were upheld, but the decision clarified the limits of how tribunals can structure their own proceedings while respecting fairness.</p>
+        <span class="label-upper">What It Means For You</span>
+        <p class="text-gray-300 text-sm leading-relaxed mb-3">Thamotharem addressed whether immigration tribunals can constrain how hearings are conducted through internal guidelines. The decision remains significant for the proposition that procedural rules must still result in genuinely fair hearings — and that where guidelines operate to prevent meaningful participation by a claimant, they can be challenged. It is frequently cited in RPD and RAD proceedings.</p>
+        <div class="mt-5 pt-4 border-t border-white/5">
+          <span class="tag-pill">Refugee Hearings</span>
+          <span class="tag-pill">RPD</span>
+          <span class="tag-pill">Procedural Fairness</span>
+        </div>
+      </div>
+
+      <!-- Case 8: Begum -->
+      <div class="case-ref-card">
+        <div class="flex items-center gap-3">
+          <span class="font-mono bg-navy border border-gold/20 text-gold/80 text-[10px] px-3 py-1 rounded">2018 FC 334</span>
+          <span class="bg-gold text-navy text-xs font-bold px-3 py-1 rounded">2018</span>
+        </div>
+        <h2 class="font-serif font-bold text-xl text-white mt-4 mb-2">Canada (MCI) v. Begum</h2>
+        <p class="text-gray-500 text-xs mb-4">Federal Court of Canada</p>
+        <div class="gold-rule"></div>
+        <span class="label-upper">What Was Decided</span>
+        <p class="text-white text-base mb-5 leading-snug">Clarified the evidentiary standard for assessing relationship genuineness in spousal sponsorship cases — minor inconsistencies cannot override extensive positive evidence of a genuine marriage.</p>
+        <span class="label-upper">What It Means For You</span>
+        <p class="text-gray-300 text-sm leading-relaxed mb-3">Visa officers sometimes refuse spousal sponsorship applications because a couple gave slightly different answers on peripheral questions — different recollections of a first date, a holiday meal, when they first said "I love you." Begum established that these minor inconsistencies cannot be determinative. An officer must weigh all the evidence — the years of communication, financial records, family involvement, and life built together — not seize on minor discrepancies as a basis for concluding the marriage is fabricated. This case is cited in virtually every spousal sponsorship judicial review we handle.</p>
+        <div class="mt-5 pt-4 border-t border-white/5">
+          <span class="tag-pill">Spousal Sponsorship</span>
+          <span class="tag-pill">Family Class</span>
+          <span class="tag-pill">Relationship Genuineness</span>
+          <span class="tag-pill">IAD Appeals</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="bg-navy-mid py-16 px-4 md:px-10 border-t border-white/5">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="font-serif font-bold text-3xl md:text-4xl text-white mb-4">How Does This Apply to <span class="text-gold">Your Case?</span></h2>
+      <p class="text-gray-400 text-base leading-relaxed mb-10">
+        Understanding case law is the starting point. Applying it to your specific facts requires legal analysis. If you're navigating a refusal, an appeal, or any immigration challenge, we can help.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+        <a href="book-consultation.html" class="btn-gold px-8 py-3.5 rounded text-white text-sm inline-block">Book Free Consultation</a>
+        <a href="index.html#contact" class="btn-outline-gold px-8 py-3.5 rounded text-sm inline-block">Contact Us</a>
+      </div>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-6 text-xs text-gray-500">
+        <span class="flex items-center gap-1.5"><i class="fa fa-lock text-gold"></i> 100% Confidential</span>
+        <span class="flex items-center gap-1.5"><i class="fa fa-comment-dots text-gold"></i> Free Consultation</span>
+        <span class="flex items-center gap-1.5"><i class="fa fa-landmark text-gold"></i> Federal Court Representation</span>
+        <span class="flex items-center gap-1.5"><i class="fa fa-shield-halved text-gold"></i> ICCRC Regulated</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-navy border-t border-white/5 py-10 px-4 md:px-10">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded border-2 border-gold flex items-center justify-center"><span class="text-gold font-serif font-black text-xs leading-none">BL</span></div>
+        <div>
+          <div class="text-white font-serif font-bold text-base leading-none">Bansal <span class="text-gold">Law</span></div>
+          <div class="text-gray-500 text-[9px] tracking-[0.15em] uppercase leading-none mt-0.5">Barristers &amp; Solicitors</div>
+        </div>
+      </a>
+      <div class="flex items-center gap-6 text-xs text-gray-500">
+        <a href="index.html" class="hover:text-gold transition-colors">Home</a>
+        <a href="index.html#services" class="hover:text-gold transition-colors">Services</a>
+        <a href="success-stories.html" class="hover:text-gold transition-colors">Success Stories</a>
+        <a href="blog.html" class="hover:text-gold transition-colors">Blog</a>
+        <a href="significant-cases.html" class="hover:text-gold transition-colors">Significant Cases</a>
+        <a href="index.html#contact" class="hover:text-gold transition-colors">Contact</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="https://www.instagram.com/bansal.law.pc/" target="_blank" rel="noopener" class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:border-gold hover:text-gold transition-all"><i class="fa-brands fa-instagram text-sm"></i></a>
+        <a href="https://www.facebook.com/immigration.oasis/" target="_blank" rel="noopener" class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:border-gold hover:text-gold transition-all"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto mt-8 pt-6 border-t border-white/5 text-center text-[11px] text-gray-600">
+      © 2024 Bansal Law Professional Corporation. All rights reserved. · 905-514-8000 · amit@bansallawyer.com
+    </div>
+  </footer>
+
+</body>
+</html>

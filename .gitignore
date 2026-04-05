@@ -1,0 +1,9 @@
+node_modules/
+*.png
+screenshot.js
+screenshot-stories.js
+screenshot-all.js
+tmp_*.js
+.claude/
+package.json
+package-lock.json

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Legal Insights — Bansal Law</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#0f1923',
+            'navy-mid': '#1a2035',
+            'navy-light': '#1e2846',
+            gold: '#c9a84c',
+            'gold-light': '#d4b86a',
+            'gold-dark': '#a8882a'
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; background: #0f1923; }
+    h1, h2, h3, h4, .serif { font-family: 'Playfair Display', Georgia, serif; }
+    .btn-gold { background: #c9a84c; color: #fff; font-weight: 600; letter-spacing: 0.05em; transition: background 0.2s, transform 0.2s; }
+    .btn-gold:hover { background: #a8882a; transform: translateY(-1px); }
+    .btn-outline-gold { border: 2px solid #c9a84c; color: #c9a84c; font-weight: 600; letter-spacing: 0.05em; transition: all 0.2s; }
+    .btn-outline-gold:hover { background: #c9a84c; color: #fff; transform: translateY(-1px); }
+    .gold-bar { display: block; width: 50px; height: 3px; background: #c9a84c; margin: 14px auto 0; }
+    .gold-bar-left { display: block; width: 50px; height: 3px; background: #c9a84c; margin: 14px 0 0; }
+    .filter-btn { border: 1px solid rgba(255,255,255,0.1); color: #9ca3af; border-radius: 999px; padding: 6px 16px; font-size: 12px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; cursor: pointer; transition: all 0.2s; background: transparent; }
+    .filter-btn.active, .filter-btn:hover { background: #c9a84c; color: #0f1923; border-color: #c9a84c; }
+    .article-card { background: #1a2035; border: 1px solid rgba(201,168,76,0.15); border-radius: 16px; overflow: hidden; transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s; }
+    .article-card:hover { transform: translateY(-6px); border-color: #c9a84c; box-shadow: 0 12px 40px rgba(201,168,76,0.15); }
+  </style>
+</head>
+<body class="text-white">
+
+  <!-- TOP BAR -->
+  <div class="bg-navy py-2 px-4 md:px-10 border-b border-white/5">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-gray-400">
+      <div class="flex items-center gap-5">
+        <span class="flex items-center gap-1.5"><i class="fa fa-map-marker-alt text-gold"></i> Brampton, ON</span>
+        <span class="hidden sm:flex items-center gap-1.5"><i class="fa fa-clock text-gold"></i> Mon–Fri 9:30 AM – 5:30 PM · Sat 11:00 AM – 2:00 PM</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="mailto:amit@bansallawyer.com" class="flex items-center gap-1.5 hover:text-gold transition-colors"><i class="fa fa-envelope text-gold"></i> amit@bansallawyer.com</a>
+        <span class="text-white/20">|</span>
+        <a href="tel:19055148000" class="flex items-center gap-1.5 hover:text-gold transition-colors"><i class="fa fa-phone text-gold"></i> 905-514-8000</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav class="bg-navy-mid sticky top-0 z-50 shadow-lg py-4 px-4 md:px-10">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded border-2 border-gold flex items-center justify-center"><span class="text-gold font-serif font-black text-sm leading-none">BL</span></div>
+        <div>
+          <div class="text-white font-serif font-bold text-lg leading-none tracking-wide">Bansal <span class="text-gold">Law</span></div>
+          <div class="text-gray-400 text-[9px] tracking-[0.18em] uppercase leading-none mt-0.5">Barristers &amp; Solicitors</div>
+        </div>
+      </a>
+      <div class="hidden lg:flex items-center gap-7 text-sm font-medium text-gray-300">
+        <a href="index.html#about" class="hover:text-gold transition-colors">About</a>
+        <a href="index.html#services" class="hover:text-gold transition-colors">Services</a>
+        <a href="index.html#team" class="hover:text-gold transition-colors">Our Team</a>
+        <a href="success-stories.html" class="hover:text-gold transition-colors">Success Stories</a>
+        <a href="blog.html" class="text-gold">Blog</a>
+        <a href="significant-cases.html" class="hover:text-gold transition-colors">Significant Cases</a>
+        <a href="index.html#contact" class="hover:text-gold transition-colors">Contact</a>
+        <a href="book-consultation.html" class="btn-gold px-5 py-2.5 rounded text-white text-sm">Book a Consultation</a>
+      </div>
+      <button class="lg:hidden text-gold text-xl"><i class="fa fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="relative bg-navy overflow-hidden py-20 px-4 md:px-10">
+    <div class="absolute inset-0 pointer-events-none">
+      <div class="absolute top-0 left-1/4 w-96 h-96 bg-gold/5 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-0 right-1/4 w-80 h-80 bg-gold/4 rounded-full blur-3xl"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto text-center">
+      <div class="inline-flex items-center gap-2 bg-gold/10 border border-gold/25 text-gold text-xs font-semibold tracking-widest uppercase px-4 py-2 rounded-full mb-6">
+        <i class="fa fa-pen-nib"></i> Legal Insights · Bansal Law
+      </div>
+      <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 leading-tight">Legal Insights</h1>
+      <p class="font-serif text-2xl md:text-3xl text-gold font-semibold mb-6">From the Desk of Bansal Law</p>
+      <p class="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed">
+        We publish practical articles to help you understand Canadian immigration law, your rights, and what to do when the system doesn't work the way it should.
+      </p>
+      <span class="gold-bar"></span>
+    </div>
+  </section>
+
+  <!-- FILTER BAR -->
+  <div class="bg-navy-mid border-b border-white/5 py-4 px-4 md:px-10 sticky top-[73px] z-40">
+    <div class="max-w-7xl mx-auto flex items-center gap-3 flex-wrap">
+      <button class="filter-btn active" data-filter="all">All Articles</button>
+      <button class="filter-btn" data-filter="immigration">Immigration Law</button>
+      <button class="filter-btn" data-filter="judicial-review">Judicial Review</button>
+      <button class="filter-btn" data-filter="federal-court">Federal Court</button>
+      <button class="filter-btn" data-filter="practice-tips">Practice Tips</button>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main class="max-w-7xl mx-auto px-4 md:px-10 py-16">
+
+    <!-- FEATURED ARTICLE -->
+    <div class="mb-14" data-category="judicial-review">
+      <div class="bg-navy-mid rounded-2xl border-l-4 border-gold py-10 px-10" style="border: 1px solid rgba(201,168,76,0.2); border-left: 4px solid #c9a84c;">
+        <div class="flex flex-wrap items-center gap-3 mb-4">
+          <span class="bg-gold text-navy text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full">Judicial Review</span>
+          <span class="text-gray-500 text-sm">March 28, 2026</span>
+          <span class="text-white/20">·</span>
+          <span class="text-gray-500 text-sm flex items-center gap-1.5"><i class="fa fa-clock text-gold/60 text-xs"></i> 8 min read</span>
+          <span class="bg-gold/10 border border-gold/20 text-gold text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full ml-auto">Featured</span>
+        </div>
+        <h2 class="font-serif text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
+          What Is a Judicial Review — And When Should You File?
+        </h2>
+        <p class="text-gray-400 text-lg leading-relaxed mb-6 max-w-3xl">
+          If IRCC has refused your application, a judicial review at Federal Court may be your best — and sometimes only — path forward. Here's what it means, how it works, and the critical deadline you need to know.
+        </p>
+        <a href="article-judicial-review-basics.html" class="inline-flex items-center gap-2 text-gold font-semibold hover:text-gold-light transition-colors">
+          Read Full Article <i class="fa fa-arrow-right text-sm"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- ARTICLE GRID -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Card 1 -->
+      <div class="article-card" data-category="judicial-review">
+        <img src="https://placehold.co/600x300/1e2846/c9a84c?text=Bansal+Law" alt="Vavilov at Five Years" class="w-full object-cover" style="height:180px;" />
+        <div class="p-6">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="bg-gold/10 border border-gold/25 text-gold text-[10px] font-bold tracking-widest uppercase px-2.5 py-1 rounded-full">Judicial Review</span>
+          </div>
+          <div class="flex items-center gap-2 text-gray-500 text-xs mb-3">
+            <span>March 15, 2026</span>
+            <span class="text-white/20">·</span>
+            <span class="flex items-center gap-1"><i class="fa fa-clock text-gold/50 text-[10px]"></i> 10 min read</span>
+          </div>
+          <h3 class="font-serif text-lg font-bold text-white mb-3 leading-snug">Vavilov at Five Years: How Canada's Landmark Decision Changed Immigration Appeals</h3>
+          <p class="text-gray-400 text-sm leading-relaxed mb-5">In 2019, the Supreme Court of Canada rewrote the rules on how courts review government decisions. Five years on, what does Vavilov mean for your immigration appeal?</p>
+          <a href="article-vavilov-five-years.html" class="text-gold text-sm font-semibold hover:text-gold-light transition-colors inline-flex items-center gap-1.5">Read Article <i class="fa fa-arrow-right text-xs"></i></a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="article-card" data-category="immigration">
+        <img src="https://placehold.co/600x300/1e2846/c9a84c?text=Bansal+Law" alt="IRCC Processing Delays" class="w-full object-cover" style="height:180px;" />
+        <div class="p-6">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="bg-gold/10 border border-gold/25 text-gold text-[10px] font-bold tracking-widest uppercase px-2.5 py-1 rounded-full">Immigration Law</span>
+          </div>
+          <div class="flex items-center gap-2 text-gray-500 text-xs mb-3">
+            <span>March 7, 2026</span>
+            <span class="text-white/20">·</span>
+            <span class="flex items-center gap-1"><i class="fa fa-clock text-gold/50 text-[10px]"></i> 6 min read</span>
+          </div>
+          <h3 class="font-serif text-lg font-bold text-white mb-3 leading-snug">IRCC Processing Delays in 2025: Your Legal Options When Ottawa Goes Silent</h3>
+          <p class="text-gray-400 text-sm leading-relaxed mb-5">IRCC's processing times have ballooned. If your application has been sitting for months — or years — you are not without options.</p>
+          <a href="#" class="text-gold text-sm font-semibold hover:text-gold-light transition-colors inline-flex items-center gap-1.5">Read Article <i class="fa fa-arrow-right text-xs"></i></a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="article-card" data-category="federal-court">
+        <img src="https://placehold.co/600x300/1e2846/c9a84c?text=Bansal+Law" alt="Procedural Fairness Letter" class="w-full object-cover" style="height:180px;" />
+        <div class="p-6">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="bg-gold/10 border border-gold/25 text-gold text-[10px] font-bold tracking-widest uppercase px-2.5 py-1 rounded-full">Federal Court</span>
+          </div>
+          <div class="flex items-center gap-2 text-gray-500 text-xs mb-3">
+            <span>February 21, 2026</span>
+            <span class="text-white/20">·</span>
+            <span class="flex items-center gap-1"><i class="fa fa-clock text-gold/50 text-[10px]"></i> 7 min read</span>
+          </div>
+          <h3 class="font-serif text-lg font-bold text-white mb-3 leading-snug">The Procedural Fairness Letter: Why You Must Not Ignore It</h3>
+          <p class="text-gray-400 text-sm leading-relaxed mb-5">A procedural fairness letter is not routine correspondence. It is IRCC signalling that they intend to refuse — and you have a narrow window to change that outcome.</p>
+          <a href="article-procedural-fairness-letter.html" class="text-gold text-sm font-semibold hover:text-gold-light transition-colors inline-flex items-center gap-1.5">Read Article <i class="fa fa-arrow-right text-xs"></i></a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="article-card" data-category="immigration">
+        <img src="https://placehold.co/600x300/1e2846/c9a84c?text=Bansal+Law" alt="Express Entry Changes" class="w-full object-cover" style="height:180px;" />
+        <div class="p-6">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="bg-gold/10 border border-gold/25 text-gold text-[10px] font-bold tracking-widest uppercase px-2.5 py-1 rounded-full">Immigration Law</span>
+          </div>
+          <div class="flex items-center gap-2 text-gray-500 text-xs mb-3">
+            <span>February 10, 2026</span>
+            <span class="text-white/20">·</span>
+            <span class="flex items-center gap-1"><i class="fa fa-clock text-gold/50 text-[10px]"></i> 5 min read</span>
+          </div>
+          <h3 class="font-serif text-lg font-bold text-white mb-3 leading-snug">Express Entry Changes: What the 2025 Category-Based Draws Mean for You</h3>
+          <p class="text-gray-400 text-sm leading-relaxed mb-5">Category-based draws have reshaped who gets invited through Express Entry. Here's how to position your profile for the draws most relevant to your situation.</p>
+          <a href="#" class="text-gold text-sm font-semibold hover:text-gold-light transition-colors inline-flex items-center gap-1.5">Read Article <i class="fa fa-arrow-right text-xs"></i></a>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="article-card" data-category="practice-tips">
+        <img src="https://placehold.co/600x300/1e2846/c9a84c?text=Bansal+Law" alt="When a Refusal Is Not the End" class="w-full object-cover" style="height:180px;" />
+        <div class="p-6">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="bg-gold/10 border border-gold/25 text-gold text-[10px] font-bold tracking-widest uppercase px-2.5 py-1 rounded-full">Practice Tips</span>
+          </div>
+          <div class="flex items-center gap-2 text-gray-500 text-xs mb-3">
+            <span>January 28, 2026</span>
+            <span class="text-white/20">·</span>
+            <span class="flex items-center gap-1"><i class="fa fa-clock text-gold/50 text-[10px]"></i> 6 min read</span>
+          </div>
+          <h3 class="font-serif text-lg font-bold text-white mb-3 leading-snug">When a Refusal Is Not the End: Recourse Options After a Visa Denial</h3>
+          <p class="text-gray-400 text-sm leading-relaxed mb-5">A refusal letter is not the final word. Depending on the type of application and the reason for refusal, several legal avenues remain open.</p>
+          <a href="#" class="text-gold text-sm font-semibold hover:text-gold-light transition-colors inline-flex items-center gap-1.5">Read Article <i class="fa fa-arrow-right text-xs"></i></a>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="article-card" data-category="immigration">
+        <img src="https://placehold.co/600x300/1e2846/c9a84c?text=Bansal+Law" alt="Super Visa vs Visitor Visa" class="w-full object-cover" style="height:180px;" />
+        <div class="p-6">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="bg-gold/10 border border-gold/25 text-gold text-[10px] font-bold tracking-widest uppercase px-2.5 py-1 rounded-full">Immigration Law</span>
+          </div>
+          <div class="flex items-center gap-2 text-gray-500 text-xs mb-3">
+            <span>January 14, 2026</span>
+            <span class="text-white/20">·</span>
+            <span class="flex items-center gap-1"><i class="fa fa-clock text-gold/50 text-[10px]"></i> 4 min read</span>
+          </div>
+          <h3 class="font-serif text-lg font-bold text-white mb-3 leading-snug">Super Visa vs. Visitor Visa: Which Is Right for Your Parents?</h3>
+          <p class="text-gray-400 text-sm leading-relaxed mb-5">Bringing parents or grandparents to Canada requires choosing the right pathway. The Super Visa offers longer stays but has stricter requirements — here's how to decide.</p>
+          <a href="#" class="text-gold text-sm font-semibold hover:text-gold-light transition-colors inline-flex items-center gap-1.5">Read Article <i class="fa fa-arrow-right text-xs"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- CTA SECTION -->
+  <section class="bg-navy-mid border-t border-white/5 py-20 px-4 md:px-10">
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="text-gold text-xs font-semibold tracking-widest uppercase mb-3">Bansal Law · Legal Insights</p>
+      <h2 class="font-serif text-3xl md:text-4xl font-bold text-white mb-4">Have a Question?</h2>
+      <p class="text-gray-400 text-lg leading-relaxed mb-8">
+        Have a question about your specific situation? Our team offers free, confidential consultations.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="book-consultation.html" class="btn-gold px-8 py-3.5 rounded text-white inline-block">Book a Consultation</a>
+        <a href="tel:19055148000" class="btn-outline-gold px-8 py-3.5 rounded inline-block">Call 905-514-8000</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-navy border-t border-white/5 py-10 px-4 md:px-10">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded border-2 border-gold flex items-center justify-center"><span class="text-gold font-serif font-black text-xs leading-none">BL</span></div>
+        <div>
+          <div class="text-white font-serif font-bold text-base leading-none">Bansal <span class="text-gold">Law</span></div>
+          <div class="text-gray-500 text-[9px] tracking-[0.15em] uppercase leading-none mt-0.5">Barristers &amp; Solicitors</div>
+        </div>
+      </a>
+      <div class="flex items-center gap-6 text-xs text-gray-500">
+        <a href="index.html" class="hover:text-gold transition-colors">Home</a>
+        <a href="index.html#services" class="hover:text-gold transition-colors">Services</a>
+        <a href="success-stories.html" class="hover:text-gold transition-colors">Success Stories</a>
+        <a href="blog.html" class="hover:text-gold transition-colors">Blog</a>
+        <a href="significant-cases.html" class="hover:text-gold transition-colors">Significant Cases</a>
+        <a href="index.html#contact" class="hover:text-gold transition-colors">Contact</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="https://www.instagram.com/bansal.law.pc/" target="_blank" rel="noopener" class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:border-gold hover:text-gold transition-all"><i class="fa-brands fa-instagram text-sm"></i></a>
+        <a href="https://www.facebook.com/immigration.oasis/" target="_blank" rel="noopener" class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:border-gold hover:text-gold transition-all"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto mt-8 pt-6 border-t border-white/5 text-center text-[11px] text-gray-600">
+      © 2024 Bansal Law Professional Corporation. All rights reserved. · 905-514-8000 · amit@bansallawyer.com
+    </div>
+  </footer>
+
+  <script>
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('[data-category]');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        cards.forEach(card => {
+          const cats = card.dataset.category || '';
+          card.style.display = (filter === 'all' || cats.includes(filter)) ? '' : 'none';
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

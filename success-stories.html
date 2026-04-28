@@ -1,12 +1,15 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Success Stories — Bansal Law</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -30,43 +33,129 @@
     }
   </script>
   <style>
-    body { font-family: 'Inter', system-ui, sans-serif; background: #0f1923; }
-    h1, h2, h3, h4, .serif { font-family: 'Playfair Display', Georgia, serif; }
-    .btn-gold { background: #c9a84c; color: #fff; font-weight: 600; letter-spacing: 0.05em; transition: background 0.2s, transform 0.2s; }
-    .btn-gold:hover { background: #a8882a; transform: translateY(-1px); }
-    .btn-outline-gold { border: 2px solid #c9a84c; color: #c9a84c; font-weight: 600; letter-spacing: 0.05em; transition: all 0.2s; }
-    .btn-outline-gold:hover { background: #c9a84c; color: #fff; transform: translateY(-1px); }
-    .gold-bar { display: block; width: 50px; height: 3px; background: #c9a84c; margin: 14px auto 0; }
-    .hero-bg { background: linear-gradient(135deg, #0f1923 0%, #1a2035 60%, #0f1923 100%); position: relative; overflow: hidden; }
-    .outcome-badge { display:inline-flex; align-items:center; gap:6px; background:rgba(201,168,76,0.12); border:1px solid rgba(201,168,76,0.35); color:#c9a84c; font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; padding:5px 12px; border-radius:999px; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: #0f1923;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    .serif {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+
+    .btn-gold {
+      background: #c9a84c;
+      color: #fff;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .btn-gold:hover {
+      background: #a8882a;
+      transform: translateY(-1px);
+    }
+
+    .btn-outline-gold {
+      border: 2px solid #c9a84c;
+      color: #c9a84c;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      transition: all 0.2s;
+    }
+
+    .btn-outline-gold:hover {
+      background: #c9a84c;
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .gold-bar {
+      display: block;
+      width: 50px;
+      height: 3px;
+      background: #c9a84c;
+      margin: 14px auto 0;
+    }
+
+    .hero-bg {
+      background: linear-gradient(135deg, #0f1923 0%, #1a2035 60%, #0f1923 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .outcome-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(201, 168, 76, 0.12);
+      border: 1px solid rgba(201, 168, 76, 0.35);
+      color: #c9a84c;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 999px;
+    }
+
     .case-card {
       background: #1a2035;
-      border: 1px solid rgba(201,168,76,0.15);
+      border: 1px solid rgba(201, 168, 76, 0.15);
       border-radius: 16px;
       transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
       position: relative;
       overflow: hidden;
     }
+
     .case-card::before {
       content: '';
       display: block;
       position: absolute;
-      top: 0; left: 0; right: 0;
+      top: 0;
+      left: 0;
+      right: 0;
       height: 3px;
       background: #c9a84c;
     }
+
     .case-card:hover {
       transform: translateY(-6px);
-      border-color: rgba(201,168,76,0.45);
-      box-shadow: 0 16px 48px rgba(201,168,76,0.12);
+      border-color: rgba(201, 168, 76, 0.45);
+      box-shadow: 0 16px 48px rgba(201, 168, 76, 0.12);
     }
-    .filter-btn { transition: all 0.2s; cursor: pointer; }
-    .filter-btn.active { background: #c9a84c; color: #0f1923; border-color: #c9a84c; }
-    .filter-btn:not(.active):hover { border-color: rgba(201,168,76,0.5); color: #c9a84c; }
-    .gold-divider { height: 1px; background: linear-gradient(to right, transparent, rgba(201,168,76,0.3), transparent); margin: 18px 0; }
-    .card-hidden { display: none !important; }
+
+    .filter-btn {
+      transition: all 0.2s;
+      cursor: pointer;
+    }
+
+    .filter-btn.active {
+      background: #c9a84c;
+      color: #0f1923;
+      border-color: #c9a84c;
+    }
+
+    .filter-btn:not(.active):hover {
+      border-color: rgba(201, 168, 76, 0.5);
+      color: #c9a84c;
+    }
+
+    .gold-divider {
+      height: 1px;
+      background: linear-gradient(to right, transparent, rgba(201, 168, 76, 0.3), transparent);
+      margin: 18px 0;
+    }
+
+    .card-hidden {
+      display: none !important;
+    }
   </style>
 </head>
+
 <body class="bg-navy text-gray-300">
 
   <!-- TOP BAR -->
@@ -74,12 +163,15 @@
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-gray-400">
       <div class="flex items-center gap-5">
         <span class="flex items-center gap-1.5"><i class="fa fa-map-marker-alt text-gold"></i> Brampton, ON</span>
-        <span class="hidden sm:flex items-center gap-1.5"><i class="fa fa-clock text-gold"></i> Mon–Fri 9:30 AM – 5:30 PM · Sat 11:00 AM – 2:00 PM</span>
+        <span class="hidden sm:flex items-center gap-1.5"><i class="fa fa-clock text-gold"></i> Mon–Fri 9:30 AM – 5:30
+          PM · Sat 11:00 AM – 2:00 PM</span>
       </div>
       <div class="flex items-center gap-4">
-        <a href="mailto:amit@bansallawyer.com" class="flex items-center gap-1.5 hover:text-gold transition-colors"><i class="fa fa-envelope text-gold"></i> amit@bansallawyer.com</a>
+        <a href="mailto:amit@bansallawyer.com" class="flex items-center gap-1.5 hover:text-gold transition-colors"><i
+            class="fa fa-envelope text-gold"></i> amit@bansallawyer.com</a>
         <span class="text-white/20">|</span>
-        <a href="tel:19055148000" class="flex items-center gap-1.5 hover:text-gold transition-colors"><i class="fa fa-phone text-gold"></i> 905-514-8000</a>
+        <a href="tel:19055148000" class="flex items-center gap-1.5 hover:text-gold transition-colors"><i
+            class="fa fa-phone text-gold"></i> 905-514-8000</a>
       </div>
     </div>
   </div>
@@ -92,8 +184,10 @@
           <span class="text-gold font-serif font-black text-sm leading-none">BL</span>
         </div>
         <div>
-          <div class="text-white font-serif font-bold text-lg leading-none tracking-wide">Bansal <span class="text-gold">Law</span></div>
-          <div class="text-gray-400 text-[9px] tracking-[0.18em] uppercase leading-none mt-0.5">Barristers &amp; Solicitors</div>
+          <div class="text-white font-serif font-bold text-lg leading-none tracking-wide">Bansal <span
+              class="text-gold">Law</span></div>
+          <div class="text-gray-400 text-[9px] tracking-[0.18em] uppercase leading-none mt-0.5">Barristers &amp;
+            Solicitors</div>
         </div>
       </a>
       <div class="hidden lg:flex items-center gap-7 text-sm font-medium text-gray-300">
@@ -106,7 +200,8 @@
         <a href="index.html#contact" class="hover:text-gold transition-colors">Contact</a>
         <a href="book-consultation.html" class="btn-gold px-5 py-2.5 rounded text-white text-sm">Book a Consultation</a>
       </div>
-      <button id="mobileMenuBtn" class="lg:hidden text-gold text-2xl p-2 -mr-2" aria-label="Open menu"><i class="fa fa-bars"></i></button>
+      <button id="mobileMenuBtn" class="lg:hidden text-gold text-2xl p-2 -mr-2" aria-label="Open menu"><i
+          class="fa fa-bars"></i></button>
     </div>
   </nav>
 
@@ -119,27 +214,44 @@
           <div class="w-8 h-8 rounded border-2 border-gold flex items-center justify-center">
             <span class="text-gold font-serif font-black text-xs leading-none">BL</span>
           </div>
-          <div class="text-white font-serif font-bold text-base leading-none">Bansal <span class="text-gold">Law</span></div>
+          <div class="text-white font-serif font-bold text-base leading-none">Bansal <span class="text-gold">Law</span>
+          </div>
         </div>
         <button id="mobileMenuClose" class="text-gray-400 hover:text-white text-xl p-1.5 -mr-1" aria-label="Close menu">
           <i class="fa fa-xmark"></i>
         </button>
       </div>
       <nav class="flex flex-col flex-1 overflow-y-auto px-5 py-3">
-        <a href="index.html#about"       class="mobile-nav-link text-gray-300 hover:text-gold py-3.5 border-b border-white/5 text-sm font-medium transition-colors flex items-center justify-between">About <i class="fa fa-chevron-right text-[10px] text-gray-600"></i></a>
-        <a href="index.html#services"    class="mobile-nav-link text-gray-300 hover:text-gold py-3.5 border-b border-white/5 text-sm font-medium transition-colors flex items-center justify-between">Services <i class="fa fa-chevron-right text-[10px] text-gray-600"></i></a>
-        <a href="index.html#team"        class="mobile-nav-link text-gray-300 hover:text-gold py-3.5 border-b border-white/5 text-sm font-medium transition-colors flex items-center justify-between">Our Team <i class="fa fa-chevron-right text-[10px] text-gray-600"></i></a>
-        <a href="success-stories.html"   class="mobile-nav-link text-gray-300 hover:text-gold py-3.5 border-b border-white/5 text-sm font-medium transition-colors flex items-center justify-between">Success Stories <i class="fa fa-chevron-right text-[10px] text-gray-600"></i></a>
-        <a href="blog.html"              class="mobile-nav-link text-gray-300 hover:text-gold py-3.5 border-b border-white/5 text-sm font-medium transition-colors flex items-center justify-between">Blog <i class="fa fa-chevron-right text-[10px] text-gray-600"></i></a>
-        <a href="significant-cases.html" class="mobile-nav-link text-gray-300 hover:text-gold py-3.5 border-b border-white/5 text-sm font-medium transition-colors flex items-center justify-between">Significant Cases <i class="fa fa-chevron-right text-[10px] text-gray-600"></i></a>
-        <a href="index.html#contact"     class="mobile-nav-link text-gray-300 hover:text-gold py-3.5 border-b border-white/5 text-sm font-medium transition-colors flex items-center justify-between">Contact <i class="fa fa-chevron-right text-[10px] text-gray-600"></i></a>
+        <a href="index.html#about"
+          class="mobile-nav-link text-gray-300 hover:text-gold py-3.5 border-b border-white/5 text-sm font-medium transition-colors flex items-center justify-between">About
+          <i class="fa fa-chevron-right text-[10px] text-gray-600"></i></a>
+        <a href="index.html#services"
+          class="mobile-nav-link text-gray-300 hover:text-gold py-3.5 border-b border-white/5 text-sm font-medium transition-colors flex items-center justify-between">Services
+          <i class="fa fa-chevron-right text-[10px] text-gray-600"></i></a>
+        <a href="index.html#team"
+          class="mobile-nav-link text-gray-300 hover:text-gold py-3.5 border-b border-white/5 text-sm font-medium transition-colors flex items-center justify-between">Our
+          Team <i class="fa fa-chevron-right text-[10px] text-gray-600"></i></a>
+        <a href="success-stories.html"
+          class="mobile-nav-link text-gray-300 hover:text-gold py-3.5 border-b border-white/5 text-sm font-medium transition-colors flex items-center justify-between">Success
+          Stories <i class="fa fa-chevron-right text-[10px] text-gray-600"></i></a>
+        <a href="blog.html"
+          class="mobile-nav-link text-gray-300 hover:text-gold py-3.5 border-b border-white/5 text-sm font-medium transition-colors flex items-center justify-between">Blog
+          <i class="fa fa-chevron-right text-[10px] text-gray-600"></i></a>
+        <a href="significant-cases.html"
+          class="mobile-nav-link text-gray-300 hover:text-gold py-3.5 border-b border-white/5 text-sm font-medium transition-colors flex items-center justify-between">Significant
+          Cases <i class="fa fa-chevron-right text-[10px] text-gray-600"></i></a>
+        <a href="index.html#contact"
+          class="mobile-nav-link text-gray-300 hover:text-gold py-3.5 border-b border-white/5 text-sm font-medium transition-colors flex items-center justify-between">Contact
+          <i class="fa fa-chevron-right text-[10px] text-gray-600"></i></a>
       </nav>
       <div class="px-5 py-5 border-t border-white/10">
-        <a href="book-consultation.html" class="btn-gold block text-center py-3.5 rounded text-sm uppercase tracking-wider">
+        <a href="book-consultation.html"
+          class="btn-gold block text-center py-3.5 rounded text-sm uppercase tracking-wider">
           <i class="fa fa-calendar-check mr-2"></i> Book a Consultation
         </a>
         <div class="flex items-center justify-center gap-4 mt-4 text-xs text-gray-500">
-          <a href="tel:19055148000" class="flex items-center gap-1.5 hover:text-gold transition-colors"><i class="fa fa-phone text-gold"></i> 905-514-8000</a>
+          <a href="tel:19055148000" class="flex items-center gap-1.5 hover:text-gold transition-colors"><i
+              class="fa fa-phone text-gold"></i> 905-514-8000</a>
         </div>
       </div>
     </div>
@@ -148,7 +260,8 @@
   <!-- HERO -->
   <section class="hero-bg py-20 px-4 md:px-10">
     <div class="max-w-7xl mx-auto text-center">
-      <div class="inline-flex items-center gap-2 border border-gold/30 bg-gold/5 text-gold text-[10px] font-semibold tracking-[0.2em] uppercase px-4 py-2 rounded-full mb-8">
+      <div
+        class="inline-flex items-center gap-2 border border-gold/30 bg-gold/5 text-gold text-[10px] font-semibold tracking-[0.2em] uppercase px-4 py-2 rounded-full mb-8">
         <i class="fa fa-trophy text-gold text-[9px]"></i>
         Victory Gallery · Bansal Law
       </div>
@@ -156,11 +269,13 @@
         Case Outcomes.<br /><span class="text-gold">Real Results.</span>
       </h1>
       <p class="text-gray-400 text-lg max-w-2xl mx-auto mb-12 leading-relaxed">
-        Every case here represents a real person whose future was at stake. These are the outcomes we fought for — and won.
+        Every case here represents a real person whose future was at stake. These are the outcomes we fought for — and
+        won.
       </p>
       <div class="flex flex-wrap items-center justify-center gap-8 md:gap-12">
         <div class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center flex-shrink-0">
+          <div
+            class="w-10 h-10 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center flex-shrink-0">
             <i class="fa fa-users text-gold text-sm"></i>
           </div>
           <div class="text-left">
@@ -170,7 +285,8 @@
         </div>
         <div class="w-px h-10 bg-white/10 hidden md:block"></div>
         <div class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center flex-shrink-0">
+          <div
+            class="w-10 h-10 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center flex-shrink-0">
             <i class="fa fa-landmark text-gold text-sm"></i>
           </div>
           <div class="text-left">
@@ -180,7 +296,8 @@
         </div>
         <div class="w-px h-10 bg-white/10 hidden md:block"></div>
         <div class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center flex-shrink-0">
+          <div
+            class="w-10 h-10 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center flex-shrink-0">
             <i class="fa fa-lock text-gold text-sm"></i>
           </div>
           <div class="text-left">
@@ -190,7 +307,8 @@
         </div>
         <div class="w-px h-10 bg-white/10 hidden md:block"></div>
         <div class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center flex-shrink-0">
+          <div
+            class="w-10 h-10 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center flex-shrink-0">
             <i class="fa fa-calendar-check text-gold text-sm"></i>
           </div>
           <div class="text-left">
@@ -202,15 +320,834 @@
     </div>
   </section>
 
+  <!-- ─── FEDERAL COURT CASE RECORD ───────────────────────── -->
+  <section class="py-24 px-4 md:px-10 relative overflow-hidden" style="background:#06090f;">
+    <!-- Subtle gold radial glow -->
+    <div class="pointer-events-none absolute inset-0"
+      style="background:radial-gradient(ellipse 70% 50% at 50% 0%, rgba(201,168,76,0.07) 0%, transparent 70%);"></div>
+    <div class="max-w-7xl mx-auto relative z-10">
+
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <div
+          class="inline-flex items-center gap-2 border border-gold/30 bg-gold/5 text-gold text-[10px] font-semibold tracking-[0.2em] uppercase px-4 py-2 rounded-full mb-8">
+          <i class="fa fa-landmark text-[9px]"></i>
+          Federal Court of Canada
+        </div>
+        <h2 class="font-serif font-bold text-4xl md:text-5xl text-white mb-5">
+          Court Case <span class="text-gold">Record</span>
+        </h2>
+        <div class="w-16 h-px bg-gold mx-auto mb-6" style="height:2px;"></div>
+        <p class="text-gray-400 text-base max-w-xl mx-auto leading-relaxed mb-12">
+          The following are cases argued by Amit Bansal before the Federal Court of Canada. Each citation represents a
+          real client whose rights we defended.
+        </p>
+        <!-- Focal stat -->
+        <div class="inline-flex items-center gap-6 bg-gold/8 border border-gold/20 rounded-2xl px-10 py-6"
+          style="background:rgba(201,168,76,0.07);">
+          <div class="text-gold font-serif font-black leading-none" style="font-size:4rem;">60<span
+              style="font-size:2.5rem;">+</span></div>
+          <div class="w-px h-12 bg-gold/20"></div>
+          <div class="text-left">
+            <div class="text-white font-semibold text-base">Federal Court Cases</div>
+            <div class="text-gray-400 text-sm mt-1">Argued &amp; Resolved</div>
+          </div>
+          <div class="w-px h-12 bg-gold/20"></div>
+          <div class="text-left">
+            <div class="text-white font-semibold text-base">IMM Citations</div>
+            <div class="text-gray-400 text-sm mt-1">On Record</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Case note -->
+      <p class="text-gray-500 text-xs uppercase tracking-widest text-center mb-8 font-semibold">Case titles and
+        citations · Partial list</p>
+
+      <!-- Case Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-2.5">
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            01</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Narinder Kaur v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-12065-24</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            02</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Ragubir Singh Tuli v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-22426-24</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            03</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Jaskaran Singh v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-23023-24</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            04</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Gagandeep Kaur v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-24691-24</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            05</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Manpreet Kaur v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-1835-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            06</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Manjad Singh v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-4118-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            07</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Roney Kandoria v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-4161-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            08</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Nikhil Monga v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-4197-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            09</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Gurpreet Singh v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-4330-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            10</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Abhi Balkrushna Patel v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-4458-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            11</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Jagroop Singh v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-5536-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            12</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Laiba Nisar v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-7996-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            13</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Parminder Singh v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-8865-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            14</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Sukhpreet Singh v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-9783-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            15</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Azambir Singh v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-9786-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            16</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Harjinder Singh v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-10392-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            17</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Jagdeep Singh Dhillon v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-10453-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            18</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Jamil Ahmed Patel v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-11039-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            19</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Manveer Singh Mahar v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-11094-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            20</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Kamaljit Singh v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-12441-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            21</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Darshan Pravinkumar Patel v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-12923-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            22</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Harmanpreet Kaur v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-13098-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            23</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Ranbir Singh Dhiman v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-13688-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            24</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Gurpinder Singh v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-14477-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            25</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Prabhjot Kaur v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-14578-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            26</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Amrinder Singh v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-15254-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            27</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Pravesh Rijal v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-15411-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            28</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Parth Bhayanav v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-15491-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            29</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Dharminder Singh v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-15816-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            30</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Kiranpal Kaur Muker v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-15861-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            31</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Rahul v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-16590-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            32</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Lakhwinder Singh v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-16726-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            33</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Kamaldeep Kaur v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-17464-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            34</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Gurpinder Kaur Gill v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-18956-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            35</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Preety Taneja v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-19792-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            36</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Om
+            Gautam v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-20356-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            37</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Hemant Pal Singh Sahi v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-20657-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            38</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Jatinder Singh v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-20906-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            39</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Navneet Kaur v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-21059-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            40</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Parvesh v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-21754-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            41</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Sukhmandeep Kaur v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-22071-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            42</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Hanish Kumar Chawla v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-22596-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            43</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Farzan Syed v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-22828-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            44</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Yudhveer Singh v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-24091-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            45</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Malkit Kaur Sidhu v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-24298-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            46</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Vishnubhai Ramabhait Patel et al. v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-25009-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            47</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Ravneet Kaur, Davinder Singh, Achint Reet Kaur v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-25209-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            48</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Savreet Kaur Dhillon v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-25567-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            49</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Pawanpreet Singh v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-25834-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            50</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Manpreet Kaur v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-26617-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            51</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Aswin Shaji v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-27588-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            52</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Mansvikumari Abhesinh Chaudhari v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-28326-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            53</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Rohit Choudhary v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-28621-25</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            54</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Amandeep Kaur v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-474-26</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            55</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Solomon Kwame Asante v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-506-26</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            56</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Harish Kumar Chawla et al. v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-586-26</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            57</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Ishan Chaitanya Vani v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-2884-26</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            58</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Navpreet Kaur &amp; Gurvinder Singh v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-3433-26</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            59</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Sukhpal Kaur Bambrah v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-3952-26</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            60</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Gagandeep v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-4249-26</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            61</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Manpreet Kaur v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-4417-26</div>
+        </div>
+
+        <div
+          class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200"
+          style="background:rgba(255,255,255,0.025);">
+          <div
+            class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">
+            62</div>
+          <div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">
+            Manpreet Kaur v. Canada</div>
+          <div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">
+            IMM-5433-26</div>
+        </div>
+
+      </div>
+
+      <!-- Bottom note -->
+      <div class="mt-12 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-white/5 pt-8">
+        <p class="text-gray-600 text-xs leading-relaxed max-w-xl">
+          <i class="fa fa-circle-info mr-1.5"></i>
+          Partial list. All cases argued before the Federal Court of Canada. Case citations are a matter of public
+          record. Past results do not guarantee future outcomes.
+        </p>
+        <a href="book-consultation.html"
+          class="btn-gold flex-shrink-0 px-7 py-3 rounded text-sm uppercase tracking-wider inline-flex items-center gap-2">
+          <i class="fa fa-calendar-check text-xs"></i> Book a Consultation
+        </a>
+      </div>
+
+    </div>
+  </section>
+
   <!-- FILTER BAR -->
   <div class="bg-navy-mid border-b border-white/5 sticky top-[73px] z-40 py-4 px-4 md:px-10">
     <div class="max-w-7xl mx-auto flex flex-wrap items-center gap-2">
       <span class="text-gray-500 text-xs font-semibold tracking-widest uppercase mr-2 hidden sm:block">Filter:</span>
-      <button class="filter-btn active border border-white/15 text-gray-300 text-xs font-semibold tracking-wide uppercase px-4 py-2 rounded-full" data-filter="all">All Cases</button>
-      <button class="filter-btn border border-white/15 text-gray-400 text-xs font-semibold tracking-wide uppercase px-4 py-2 rounded-full" data-filter="immigration">Immigration</button>
-      <button class="filter-btn border border-white/15 text-gray-400 text-xs font-semibold tracking-wide uppercase px-4 py-2 rounded-full" data-filter="litigation">Litigation &amp; Appeals</button>
-      <button class="filter-btn border border-white/15 text-gray-400 text-xs font-semibold tracking-wide uppercase px-4 py-2 rounded-full" data-filter="federal-court">Federal Court</button>
-      <button class="filter-btn border border-white/15 text-gray-400 text-xs font-semibold tracking-wide uppercase px-4 py-2 rounded-full" data-filter="work-permit">Work Permits</button>
+      <button
+        class="filter-btn active border border-white/15 text-gray-300 text-xs font-semibold tracking-wide uppercase px-4 py-2 rounded-full"
+        data-filter="all">All Cases</button>
+      <button
+        class="filter-btn border border-white/15 text-gray-400 text-xs font-semibold tracking-wide uppercase px-4 py-2 rounded-full"
+        data-filter="immigration">Immigration</button>
+      <button
+        class="filter-btn border border-white/15 text-gray-400 text-xs font-semibold tracking-wide uppercase px-4 py-2 rounded-full"
+        data-filter="litigation">Litigation &amp; Appeals</button>
+      <button
+        class="filter-btn border border-white/15 text-gray-400 text-xs font-semibold tracking-wide uppercase px-4 py-2 rounded-full"
+        data-filter="federal-court">Federal Court</button>
+      <button
+        class="filter-btn border border-white/15 text-gray-400 text-xs font-semibold tracking-wide uppercase px-4 py-2 rounded-full"
+        data-filter="work-permit">Work Permits</button>
     </div>
   </div>
 
@@ -230,13 +1167,18 @@
           <div class="w-11 h-11 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center mb-4">
             <i class="fa fa-graduation-cap text-gold text-base"></i>
           </div>
-          <div class="text-gold text-[10px] font-semibold tracking-widest uppercase mb-3">Study Permit · Federal Court</div>
+          <div class="text-gold text-[10px] font-semibold tracking-widest uppercase mb-3">Study Permit · Federal Court
+          </div>
           <h3 class="font-serif font-bold text-2xl text-white leading-snug mb-3">5-Year Entry Ban Reversed</h3>
-          <p class="text-gray-400 text-sm leading-relaxed mb-4">A single officer's boilerplate refusal imposed a five-year ban on a student who had done everything right. We challenged the decision at Federal Court — and had the ban overturned.</p>
+          <p class="text-gray-400 text-sm leading-relaxed mb-4">A single officer's boilerplate refusal imposed a
+            five-year ban on a student who had done everything right. We challenged the decision at Federal Court — and
+            had the ban overturned.</p>
           <div class="gold-divider"></div>
           <div class="flex items-center justify-between">
             <span class="outcome-badge"><i class="fa fa-circle-check text-[9px]"></i> BAN OVERTURNED</span>
-            <a href="case-study-permit-ban.html" class="text-gold text-sm font-semibold hover:text-gold-light transition-colors flex items-center gap-1">Read Full Case <i class="fa fa-arrow-right text-[11px]"></i></a>
+            <a href="case-study-permit-ban.html"
+              class="text-gold text-sm font-semibold hover:text-gold-light transition-colors flex items-center gap-1">Read
+              Full Case <i class="fa fa-arrow-right text-[11px]"></i></a>
           </div>
         </div>
 
@@ -246,13 +1188,18 @@
           <div class="w-11 h-11 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center mb-4">
             <i class="fa fa-ring text-gold text-base"></i>
           </div>
-          <div class="text-gold text-[10px] font-semibold tracking-widest uppercase mb-3">Spousal Permit · IRCC Challenge</div>
+          <div class="text-gold text-[10px] font-semibold tracking-widest uppercase mb-3">Spousal Permit · IRCC
+            Challenge</div>
           <h3 class="font-serif font-bold text-2xl text-white leading-snug mb-3">Refused Twice. Won on Third.</h3>
-          <p class="text-gray-400 text-sm leading-relaxed mb-4">IRCC refused our client's spouse an open work permit twice, citing a 'lack of genuine relationship.' We dismantled the credibility finding and secured a consent order settlement.</p>
+          <p class="text-gray-400 text-sm leading-relaxed mb-4">IRCC refused our client's spouse an open work permit
+            twice, citing a 'lack of genuine relationship.' We dismantled the credibility finding and secured a consent
+            order settlement.</p>
           <div class="gold-divider"></div>
           <div class="flex items-center justify-between">
             <span class="outcome-badge"><i class="fa fa-circle-check text-[9px]"></i> PERMIT SECURED</span>
-            <a href="case-spousal-work-permit.html" class="text-gold text-sm font-semibold hover:text-gold-light transition-colors flex items-center gap-1">Read Full Case <i class="fa fa-arrow-right text-[11px]"></i></a>
+            <a href="case-spousal-work-permit.html"
+              class="text-gold text-sm font-semibold hover:text-gold-light transition-colors flex items-center gap-1">Read
+              Full Case <i class="fa fa-arrow-right text-[11px]"></i></a>
           </div>
         </div>
 
@@ -262,13 +1209,18 @@
           <div class="w-11 h-11 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center mb-4">
             <i class="fa fa-id-card text-gold text-base"></i>
           </div>
-          <div class="text-gold text-[10px] font-semibold tracking-widest uppercase mb-3">Permanent Residency · Express Entry</div>
+          <div class="text-gold text-[10px] font-semibold tracking-widest uppercase mb-3">Permanent Residency · Express
+            Entry</div>
           <h3 class="font-serif font-bold text-2xl text-white leading-snug mb-3">PR Pathway Reopened</h3>
-          <p class="text-gray-400 text-sm leading-relaxed mb-4">A misrepresentation allegation threatened to erase five years of our client's Canadian journey. We filed, obtained a stay, and IRCC withdrew the finding entirely on consent.</p>
+          <p class="text-gray-400 text-sm leading-relaxed mb-4">A misrepresentation allegation threatened to erase five
+            years of our client's Canadian journey. We filed, obtained a stay, and IRCC withdrew the finding entirely on
+            consent.</p>
           <div class="gold-divider"></div>
           <div class="flex items-center justify-between">
             <span class="outcome-badge"><i class="fa fa-circle-check text-[9px]"></i> PR RESTORED</span>
-            <a href="case-express-entry-pr.html" class="text-gold text-sm font-semibold hover:text-gold-light transition-colors flex items-center gap-1">Read Full Case <i class="fa fa-arrow-right text-[11px]"></i></a>
+            <a href="case-express-entry-pr.html"
+              class="text-gold text-sm font-semibold hover:text-gold-light transition-colors flex items-center gap-1">Read
+              Full Case <i class="fa fa-arrow-right text-[11px]"></i></a>
           </div>
         </div>
 
@@ -278,13 +1230,18 @@
           <div class="w-11 h-11 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center mb-4">
             <i class="fa fa-gavel text-gold text-base"></i>
           </div>
-          <div class="text-gold text-[10px] font-semibold tracking-widest uppercase mb-3">Deportation Defence · Federal Court</div>
+          <div class="text-gold text-[10px] font-semibold tracking-widest uppercase mb-3">Deportation Defence · Federal
+            Court</div>
           <h3 class="font-serif font-bold text-2xl text-white leading-snug mb-3">Removal Halted in 24 Hours</h3>
-          <p class="text-gray-400 text-sm leading-relaxed mb-4">Our client had 48 hours before a removal order was enforced. We filed an emergency Federal Court motion the same day. The stay was granted before his flight.</p>
+          <p class="text-gray-400 text-sm leading-relaxed mb-4">Our client had 48 hours before a removal order was
+            enforced. We filed an emergency Federal Court motion the same day. The stay was granted before his flight.
+          </p>
           <div class="gold-divider"></div>
           <div class="flex items-center justify-between">
             <span class="outcome-badge"><i class="fa fa-circle-check text-[9px]"></i> REMOVAL HALTED</span>
-            <a href="case-stay-of-removal.html" class="text-gold text-sm font-semibold hover:text-gold-light transition-colors flex items-center gap-1">Read Full Case <i class="fa fa-arrow-right text-[11px]"></i></a>
+            <a href="case-stay-of-removal.html"
+              class="text-gold text-sm font-semibold hover:text-gold-light transition-colors flex items-center gap-1">Read
+              Full Case <i class="fa fa-arrow-right text-[11px]"></i></a>
           </div>
         </div>
 
@@ -294,13 +1251,18 @@
           <div class="w-11 h-11 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center mb-4">
             <i class="fa fa-passport text-gold text-base"></i>
           </div>
-          <div class="text-gold text-[10px] font-semibold tracking-widest uppercase mb-3">Visitor Visa · IRCC Challenge</div>
+          <div class="text-gold text-[10px] font-semibold tracking-widest uppercase mb-3">Visitor Visa · IRCC Challenge
+          </div>
           <h3 class="font-serif font-bold text-2xl text-white leading-snug mb-3">Three Refusals. One Win.</h3>
-          <p class="text-gray-400 text-sm leading-relaxed mb-4">For three years, our client's parents were denied visitor visas to meet their grandchildren. We rebuilt the case from scratch and obtained approval on the very next submission.</p>
+          <p class="text-gray-400 text-sm leading-relaxed mb-4">For three years, our client's parents were denied
+            visitor visas to meet their grandchildren. We rebuilt the case from scratch and obtained approval on the
+            very next submission.</p>
           <div class="gold-divider"></div>
           <div class="flex items-center justify-between">
             <span class="outcome-badge"><i class="fa fa-circle-check text-[9px]"></i> VISA APPROVED</span>
-            <a href="case-visitor-visa.html" class="text-gold text-sm font-semibold hover:text-gold-light transition-colors flex items-center gap-1">Read Full Case <i class="fa fa-arrow-right text-[11px]"></i></a>
+            <a href="case-visitor-visa.html"
+              class="text-gold text-sm font-semibold hover:text-gold-light transition-colors flex items-center gap-1">Read
+              Full Case <i class="fa fa-arrow-right text-[11px]"></i></a>
           </div>
         </div>
 
@@ -310,13 +1272,18 @@
           <div class="w-11 h-11 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center mb-4">
             <i class="fa fa-scale-balanced text-gold text-base"></i>
           </div>
-          <div class="text-gold text-[10px] font-semibold tracking-widest uppercase mb-3">Detention Review · Immigration Division</div>
+          <div class="text-gold text-[10px] font-semibold tracking-widest uppercase mb-3">Detention Review · Immigration
+            Division</div>
           <h3 class="font-serif font-bold text-2xl text-white leading-snug mb-3">60 Days Detained. Home by Evening.</h3>
-          <p class="text-gray-400 text-sm leading-relaxed mb-4">CBSA had held our client for two months, calling him a flight risk. At the Immigration Division review, we presented a release plan the adjudicator couldn't refuse.</p>
+          <p class="text-gray-400 text-sm leading-relaxed mb-4">CBSA had held our client for two months, calling him a
+            flight risk. At the Immigration Division review, we presented a release plan the adjudicator couldn't
+            refuse.</p>
           <div class="gold-divider"></div>
           <div class="flex items-center justify-between">
             <span class="outcome-badge"><i class="fa fa-circle-check text-[9px]"></i> CLIENT RELEASED</span>
-            <a href="case-detention-release.html" class="text-gold text-sm font-semibold hover:text-gold-light transition-colors flex items-center gap-1">Read Full Case <i class="fa fa-arrow-right text-[11px]"></i></a>
+            <a href="case-detention-release.html"
+              class="text-gold text-sm font-semibold hover:text-gold-light transition-colors flex items-center gap-1">Read
+              Full Case <i class="fa fa-arrow-right text-[11px]"></i></a>
           </div>
         </div>
 
@@ -326,13 +1293,18 @@
           <div class="w-11 h-11 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center mb-4">
             <i class="fa fa-user-graduate text-gold text-base"></i>
           </div>
-          <div class="text-gold text-[10px] font-semibold tracking-widest uppercase mb-3">Post-Graduate Work Permit · IRCC</div>
+          <div class="text-gold text-[10px] font-semibold tracking-widest uppercase mb-3">Post-Graduate Work Permit ·
+            IRCC</div>
           <h3 class="font-serif font-bold text-2xl text-white leading-snug mb-3">IRCC's Error Caught. PGWP Issued.</h3>
-          <p class="text-gray-400 text-sm leading-relaxed mb-4">A recent graduate was denied a post-graduate work permit because IRCC incorrectly assessed her institution's eligibility. We proved the error. The permit was issued.</p>
+          <p class="text-gray-400 text-sm leading-relaxed mb-4">A recent graduate was denied a post-graduate work permit
+            because IRCC incorrectly assessed her institution's eligibility. We proved the error. The permit was issued.
+          </p>
           <div class="gold-divider"></div>
           <div class="flex items-center justify-between">
             <span class="outcome-badge"><i class="fa fa-circle-check text-[9px]"></i> PGWP ISSUED</span>
-            <a href="case-pgwp.html" class="text-gold text-sm font-semibold hover:text-gold-light transition-colors flex items-center gap-1">Read Full Case <i class="fa fa-arrow-right text-[11px]"></i></a>
+            <a href="case-pgwp.html"
+              class="text-gold text-sm font-semibold hover:text-gold-light transition-colors flex items-center gap-1">Read
+              Full Case <i class="fa fa-arrow-right text-[11px]"></i></a>
           </div>
         </div>
 
@@ -342,13 +1314,19 @@
           <div class="w-11 h-11 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center mb-4">
             <i class="fa fa-users text-gold text-base"></i>
           </div>
-          <div class="text-gold text-[10px] font-semibold tracking-widest uppercase mb-3">Family Class Sponsorship · IAD</div>
-          <h3 class="font-serif font-bold text-2xl text-white leading-snug mb-3">"Not Genuine" — Overturned on Appeal</h3>
-          <p class="text-gray-400 text-sm leading-relaxed mb-4">The visa officer said the marriage wasn't genuine. After three years together, our clients knew otherwise. We took it to the Immigration Appeal Division — and won.</p>
+          <div class="text-gold text-[10px] font-semibold tracking-widest uppercase mb-3">Family Class Sponsorship · IAD
+          </div>
+          <h3 class="font-serif font-bold text-2xl text-white leading-snug mb-3">"Not Genuine" — Overturned on Appeal
+          </h3>
+          <p class="text-gray-400 text-sm leading-relaxed mb-4">The visa officer said the marriage wasn't genuine. After
+            three years together, our clients knew otherwise. We took it to the Immigration Appeal Division — and won.
+          </p>
           <div class="gold-divider"></div>
           <div class="flex items-center justify-between">
             <span class="outcome-badge"><i class="fa fa-circle-check text-[9px]"></i> APPEAL ALLOWED</span>
-            <a href="case-iad-sponsorship.html" class="text-gold text-sm font-semibold hover:text-gold-light transition-colors flex items-center gap-1">Read Full Case <i class="fa fa-arrow-right text-[11px]"></i></a>
+            <a href="case-iad-sponsorship.html"
+              class="text-gold text-sm font-semibold hover:text-gold-light transition-colors flex items-center gap-1">Read
+              Full Case <i class="fa fa-arrow-right text-[11px]"></i></a>
           </div>
         </div>
 
@@ -358,13 +1336,18 @@
           <div class="w-11 h-11 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center mb-4">
             <i class="fa fa-briefcase text-gold text-base"></i>
           </div>
-          <div class="text-gold text-[10px] font-semibold tracking-widest uppercase mb-3">Work Permit · Status Restoration</div>
-          <h3 class="font-serif font-bold text-2xl text-white leading-snug mb-3">Implied Status Trap. Status Restored.</h3>
-          <p class="text-gray-400 text-sm leading-relaxed mb-4">Three days before expiry, IRCC refused our client's work permit extension. He didn't know he'd fallen into an implied status gap. We got him out.</p>
+          <div class="text-gold text-[10px] font-semibold tracking-widest uppercase mb-3">Work Permit · Status
+            Restoration</div>
+          <h3 class="font-serif font-bold text-2xl text-white leading-snug mb-3">Implied Status Trap. Status Restored.
+          </h3>
+          <p class="text-gray-400 text-sm leading-relaxed mb-4">Three days before expiry, IRCC refused our client's work
+            permit extension. He didn't know he'd fallen into an implied status gap. We got him out.</p>
           <div class="gold-divider"></div>
           <div class="flex items-center justify-between">
             <span class="outcome-badge"><i class="fa fa-circle-check text-[9px]"></i> STATUS RESTORED</span>
-            <a href="case-work-permit-status.html" class="text-gold text-sm font-semibold hover:text-gold-light transition-colors flex items-center gap-1">Read Full Case <i class="fa fa-arrow-right text-[11px]"></i></a>
+            <a href="case-work-permit-status.html"
+              class="text-gold text-sm font-semibold hover:text-gold-light transition-colors flex items-center gap-1">Read
+              Full Case <i class="fa fa-arrow-right text-[11px]"></i></a>
           </div>
         </div>
 
@@ -381,196 +1364,19 @@
     <div class="max-w-7xl mx-auto flex items-start gap-3">
       <i class="fa fa-circle-info text-gray-600 mt-0.5 flex-shrink-0"></i>
       <p class="text-gray-600 text-xs leading-relaxed">
-        <strong class="text-gray-500">Disclaimer:</strong> The case summaries presented on this page are based on real matters handled by Bansal Law. Details have been generalized to protect client confidentiality. Past results are not a guarantee of future outcomes. Every immigration matter is unique and depends on its own facts and applicable law. These summaries are for informational purposes only and do not constitute legal advice.
+        <strong class="text-gray-500">Disclaimer:</strong> The case summaries presented on this page are based on real
+        matters handled by Bansal Law. Details have been generalized to protect client confidentiality. Past results are
+        not a guarantee of future outcomes. Every immigration matter is unique and depends on its own facts and
+        applicable law. These summaries are for informational purposes only and do not constitute legal advice.
       </p>
     </div>
   </div>
 
-  <!-- ─── FEDERAL COURT CASE RECORD ───────────────────────── -->
-  <section class="py-24 px-4 md:px-10 relative overflow-hidden" style="background:#06090f;">
-    <!-- Subtle gold radial glow -->
-    <div class="pointer-events-none absolute inset-0" style="background:radial-gradient(ellipse 70% 50% at 50% 0%, rgba(201,168,76,0.07) 0%, transparent 70%);"></div>
-    <div class="max-w-7xl mx-auto relative z-10">
-
-      <!-- Section Header -->
-      <div class="text-center mb-16">
-        <div class="inline-flex items-center gap-2 border border-gold/30 bg-gold/5 text-gold text-[10px] font-semibold tracking-[0.2em] uppercase px-4 py-2 rounded-full mb-8">
-          <i class="fa fa-landmark text-[9px]"></i>
-          Federal Court of Canada
-        </div>
-        <h2 class="font-serif font-bold text-4xl md:text-5xl text-white mb-5">
-          Court Case <span class="text-gold">Record</span>
-        </h2>
-        <div class="w-16 h-px bg-gold mx-auto mb-6" style="height:2px;"></div>
-        <p class="text-gray-400 text-base max-w-xl mx-auto leading-relaxed mb-12">
-          The following are cases argued by Amit Bansal before the Federal Court of Canada. Each citation represents a real client whose rights we defended.
-        </p>
-        <!-- Focal stat -->
-        <div class="inline-flex items-center gap-6 bg-gold/8 border border-gold/20 rounded-2xl px-10 py-6" style="background:rgba(201,168,76,0.07);">
-          <div class="text-gold font-serif font-black leading-none" style="font-size:4rem;">62<span style="font-size:2.5rem;">+</span></div>
-          <div class="w-px h-12 bg-gold/20"></div>
-          <div class="text-left">
-            <div class="text-white font-semibold text-base">Federal Court Cases</div>
-            <div class="text-gray-400 text-sm mt-1">Argued &amp; Resolved</div>
-          </div>
-          <div class="w-px h-12 bg-gold/20"></div>
-          <div class="text-left">
-            <div class="text-white font-semibold text-base">IMM Citations</div>
-            <div class="text-gray-400 text-sm mt-1">On Record</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Case note -->
-      <p class="text-gray-500 text-xs uppercase tracking-widest text-center mb-8 font-semibold">Case titles and citations · Partial list</p>
-
-      <!-- Case Grid -->
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-2.5">
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">01</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Narinder Kaur v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-12065-24</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">02</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Ragubir Singh Tuli v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-22426-24</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">03</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Jaskaran Singh v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-23023-24</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">04</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Gagandeep Kaur v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-24691-24</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">05</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Manpreet Kaur v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-1835-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">06</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Manjad Singh v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-4118-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">07</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Roney Kandoria v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-4161-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">08</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Nikhil Monga v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-4197-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">09</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Gurpreet Singh v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-4330-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">10</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Abhi Balkrushna Patel v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-4458-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">11</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Jagroop Singh v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-5536-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">12</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Laiba Nisar v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-7996-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">13</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Parminder Singh v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-8865-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">14</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Sukhpreet Singh v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-9783-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">15</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Azambir Singh v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-9786-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">16</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Harjinder Singh v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-10392-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">17</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Jagdeep Singh Dhillon v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-10453-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">18</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Jamil Ahmed Patel v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-11039-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">19</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Manveer Singh Mahar v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-11094-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">20</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Kamaljit Singh v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-12441-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">21</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Darshan Pravinkumar Patel v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-12923-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">22</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Harmanpreet Kaur v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-13098-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">23</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Ranbir Singh Dhiman v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-13688-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">24</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Gurpinder Singh v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-14477-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">25</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Prabhjot Kaur v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-14578-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">26</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Amrinder Singh v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-15254-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">27</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Pravesh Rijal v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-15411-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">28</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Parth Bhayanav v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-15491-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">29</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Dharminder Singh v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-15816-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">30</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Kiranpal Kaur Muker v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-15861-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">31</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Rahul v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-16590-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">32</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Lakhwinder Singh v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-16726-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">33</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Kamaldeep Kaur v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-17464-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">34</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Gurpinder Kaur Gill v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-18956-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">35</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Preety Taneja v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-19792-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">36</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Om Gautam v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-20356-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">37</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Hemant Pal Singh Sahi v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-20657-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">38</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Jatinder Singh v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-20906-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">39</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Navneet Kaur v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-21059-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">40</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Parvesh v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-21754-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">41</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Sukhmandeep Kaur v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-22071-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">42</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Hanish Kumar Chawla v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-22596-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">43</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Farzan Syed v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-22828-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">44</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Yudhveer Singh v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-24091-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">45</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Malkit Kaur Sidhu v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-24298-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">46</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Vishnubhai Ramabhait Patel et al. v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-25009-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">47</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Ravneet Kaur, Davinder Singh, Achint Reet Kaur v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-25209-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">48</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Savreet Kaur Dhillon v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-25567-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">49</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Pawanpreet Singh v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-25834-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">50</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Manpreet Kaur v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-26617-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">51</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Aswin Shaji v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-27588-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">52</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Mansvikumari Abhesinh Chaudhari v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-28326-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">53</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Rohit Choudhary v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-28621-25</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">54</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Amandeep Kaur v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-474-26</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">55</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Solomon Kwame Asante v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-506-26</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">56</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Harish Kumar Chawla et al. v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-586-26</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">57</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Ishan Chaitanya Vani v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-2884-26</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">58</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Navpreet Kaur &amp; Gurvinder Singh v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-3433-26</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">59</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Sukhpal Kaur Bambrah v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-3952-26</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">60</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Gagandeep v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-4249-26</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">61</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Manpreet Kaur v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-4417-26</div></div>
-
-        <div class="group flex items-center gap-4 border border-white/5 rounded-xl px-5 py-3.5 hover:border-gold/40 hover:bg-gold/5 transition-all duration-200" style="background:rgba(255,255,255,0.025);"><div class="text-gold font-serif font-bold text-sm w-6 flex-shrink-0 opacity-30 group-hover:opacity-100 transition-opacity">62</div><div class="flex-1 text-gray-200 text-sm font-medium leading-snug group-hover:text-white transition-colors">Manpreet Kaur v. Canada</div><div class="text-gold font-mono text-xs flex-shrink-0 opacity-60 group-hover:opacity-100 transition-opacity">IMM-5433-26</div></div>
-
-      </div>
-
-      <!-- Bottom note -->
-      <div class="mt-12 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-white/5 pt-8">
-        <p class="text-gray-600 text-xs leading-relaxed max-w-xl">
-          <i class="fa fa-circle-info mr-1.5"></i>
-          Partial list. All cases argued before the Federal Court of Canada. Case citations are a matter of public record. Past results do not guarantee future outcomes.
-        </p>
-        <a href="book-consultation.html" class="btn-gold flex-shrink-0 px-7 py-3 rounded text-sm uppercase tracking-wider inline-flex items-center gap-2">
-          <i class="fa fa-calendar-check text-xs"></i> Book a Consultation
-        </a>
-      </div>
-
-    </div>
-  </section>
-
   <!-- CTA SECTION -->
   <section class="py-20 px-4 md:px-10 bg-navy">
     <div class="max-w-3xl mx-auto text-center">
-      <div class="inline-flex items-center gap-2 border border-gold/30 bg-gold/5 text-gold text-[10px] font-semibold tracking-[0.2em] uppercase px-4 py-2 rounded-full mb-6">
+      <div
+        class="inline-flex items-center gap-2 border border-gold/30 bg-gold/5 text-gold text-[10px] font-semibold tracking-[0.2em] uppercase px-4 py-2 rounded-full mb-6">
         <i class="fa fa-shield-halved text-[9px]"></i>
         Strategic Immigration Advocacy
       </div>
@@ -578,19 +1384,25 @@
         Your Case Deserves<br />Strategic Advocacy.
       </h2>
       <p class="text-gray-400 text-base leading-relaxed mb-10 max-w-xl mx-auto">
-        Whether you're facing a refusal, a ban, a removal order, or an appeal — we fight for the outcome you deserve. Start with a free, confidential consultation.
+        Whether you're facing a refusal, a ban, a removal order, or an appeal — we fight for the outcome you deserve.
+        Start with a free, confidential consultation.
       </p>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-        <a href="index.html#contact" class="btn-gold px-8 py-3.5 rounded text-white text-sm inline-block">Book Free Consultation</a>
+        <a href="index.html#contact" class="btn-gold px-8 py-3.5 rounded text-white text-sm inline-block">Book Free
+          Consultation</a>
         <a href="tel:19055148000" class="btn-outline-gold px-8 py-3.5 rounded text-sm inline-flex items-center gap-2">
           <i class="fa fa-phone text-sm"></i> Call 905-514-8000
         </a>
       </div>
       <div class="flex flex-wrap items-center justify-center gap-6 text-xs text-gray-500">
-        <span class="flex items-center gap-1.5"><i class="fa fa-lock text-gold text-[10px]"></i> 100% Confidential</span>
-        <span class="flex items-center gap-1.5"><i class="fa fa-calendar-check text-gold text-[10px]"></i> Free Consultation</span>
-        <span class="flex items-center gap-1.5"><i class="fa fa-landmark text-gold text-[10px]"></i> Federal Court Representation</span>
-        <span class="flex items-center gap-1.5"><i class="fa fa-certificate text-gold text-[10px]"></i> ICCRC Regulated</span>
+        <span class="flex items-center gap-1.5"><i class="fa fa-lock text-gold text-[10px]"></i> 100%
+          Confidential</span>
+        <span class="flex items-center gap-1.5"><i class="fa fa-calendar-check text-gold text-[10px]"></i> Free
+          Consultation</span>
+        <span class="flex items-center gap-1.5"><i class="fa fa-landmark text-gold text-[10px]"></i> Federal Court
+          Representation</span>
+        <span class="flex items-center gap-1.5"><i class="fa fa-certificate text-gold text-[10px]"></i> ICCRC
+          Regulated</span>
       </div>
     </div>
   </section>
@@ -603,8 +1415,10 @@
           <span class="text-gold font-serif font-black text-xs leading-none">BL</span>
         </div>
         <div>
-          <div class="text-white font-serif font-bold text-base leading-none">Bansal <span class="text-gold">Law</span></div>
-          <div class="text-gray-500 text-[9px] tracking-[0.15em] uppercase leading-none mt-0.5">Barristers &amp; Solicitors</div>
+          <div class="text-white font-serif font-bold text-base leading-none">Bansal <span class="text-gold">Law</span>
+          </div>
+          <div class="text-gray-500 text-[9px] tracking-[0.15em] uppercase leading-none mt-0.5">Barristers &amp;
+            Solicitors</div>
         </div>
       </a>
       <div class="flex items-center gap-6 text-xs text-gray-500">
@@ -616,8 +1430,12 @@
         <a href="index.html#contact" class="hover:text-gold transition-colors">Contact</a>
       </div>
       <div class="flex items-center gap-4">
-        <a href="https://www.instagram.com/bansal.law.pc/" target="_blank" rel="noopener" class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:border-gold hover:text-gold transition-all"><i class="fa-brands fa-instagram text-sm"></i></a>
-        <a href="https://www.facebook.com/immigration.oasis/" target="_blank" rel="noopener" class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:border-gold hover:text-gold transition-all"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+        <a href="https://www.instagram.com/bansal.law.pc/" target="_blank" rel="noopener"
+          class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:border-gold hover:text-gold transition-all"><i
+            class="fa-brands fa-instagram text-sm"></i></a>
+        <a href="https://www.facebook.com/immigration.oasis/" target="_blank" rel="noopener"
+          class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:border-gold hover:text-gold transition-all"><i
+            class="fa-brands fa-facebook-f text-sm"></i></a>
       </div>
     </div>
     <div class="max-w-7xl mx-auto mt-8 pt-6 border-t border-white/5 text-center text-[11px] text-gray-600">
@@ -651,10 +1469,10 @@
   </script>
 
   <script>
-    const mobileMenu    = document.getElementById('mobileMenu');
+    const mobileMenu = document.getElementById('mobileMenu');
     const mobileOverlay = document.getElementById('mobileMenuOverlay');
-    function openMobileMenu()  { mobileMenu.classList.remove('hidden'); document.body.style.overflow = 'hidden'; }
-    function closeMobileMenu() { mobileMenu.classList.add('hidden');    document.body.style.overflow = ''; }
+    function openMobileMenu() { mobileMenu.classList.remove('hidden'); document.body.style.overflow = 'hidden'; }
+    function closeMobileMenu() { mobileMenu.classList.add('hidden'); document.body.style.overflow = ''; }
     document.getElementById('mobileMenuBtn').addEventListener('click', openMobileMenu);
     document.getElementById('mobileMenuClose').addEventListener('click', closeMobileMenu);
     mobileOverlay.addEventListener('click', closeMobileMenu);
@@ -662,4 +1480,5 @@
   </script>
 
 </body>
+
 </html>

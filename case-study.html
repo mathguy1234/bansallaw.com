@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="page-title">Case Study — Bansal Law</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#0f1923', 'navy-mid': '#1a2035', 'navy-light': '#1e2846',
+            gold: '#c9a84c', 'gold-light': '#d4b86a', 'gold-dark': '#a8882a',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; background: #0f1923; }
+    h1,h2,h3,h4,.serif { font-family: 'Playfair Display', Georgia, serif; }
+    .btn-gold { background:#c9a84c; color:#fff; font-weight:600; letter-spacing:.05em; transition:background .2s,transform .2s; }
+    .btn-gold:hover { background:#a8882a; transform:translateY(-1px); }
+    .btn-outline-gold { border:2px solid #c9a84c; color:#c9a84c; font-weight:600; letter-spacing:.05em; transition:all .2s; }
+    .btn-outline-gold:hover { background:#c9a84c; color:#fff; transform:translateY(-1px); }
+    .outcome-badge { display:inline-flex; align-items:center; gap:6px; background:rgba(201,168,76,.12); border:1px solid rgba(201,168,76,.35); color:#c9a84c; font-size:11px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; padding:5px 12px; border-radius:999px; }
+    .step-tab { transition:all .2s; cursor:pointer; }
+    .step-tab.active .step-circle { background:#c9a84c; border-color:#c9a84c; color:#0f1923; }
+    .step-tab.active .step-label { color:#c9a84c; }
+    .step-tab.done .step-circle { background:rgba(201,168,76,.2); border-color:#c9a84c; color:#c9a84c; }
+    .step-circle { width:36px; height:36px; border-radius:50%; border:2px solid rgba(255,255,255,.15); display:flex; align-items:center; justify-content:center; font-weight:700; font-size:14px; color:rgba(255,255,255,.4); transition:all .2s; flex-shrink:0; }
+    .step-connector { flex:1; height:2px; background:rgba(255,255,255,.08); position:relative; }
+    .step-connector.done { background:rgba(201,168,76,.4); }
+    .step-label { font-size:11px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; color:rgba(255,255,255,.35); margin-top:6px; white-space:nowrap; transition:color .2s; }
+    .content-card { background:#1a2035; border:1px solid rgba(201,168,76,.15); border-radius:16px; position:relative; overflow:hidden; }
+    .content-card::before { content:''; display:block; position:absolute; top:0; left:0; right:0; height:3px; background:#c9a84c; }
+    .gold-divider { height:1px; background:linear-gradient(to right,transparent,rgba(201,168,76,.3),transparent); margin:24px 0; }
+    .hero-bg { background:linear-gradient(135deg,#0f1923 0%,#1a2035 60%,#0f1923 100%); position:relative; overflow:hidden; }
+  </style>
+</head>
+<body class="bg-navy text-gray-300">
+
+  <!-- TOP BAR -->
+  <div class="bg-navy py-2 px-4 md:px-10 border-b border-white/5">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-gray-400">
+      <div class="flex items-center gap-5">
+        <span class="flex items-center gap-1.5"><i class="fa fa-map-marker-alt text-gold"></i> Brampton, ON</span>
+        <span class="hidden sm:flex items-center gap-1.5"><i class="fa fa-clock text-gold"></i> Mon-Fri 9:30 AM - 5:30 PM · Sat 11:00 AM - 2:00 PM</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="mailto:info@bansallaw.ca" class="flex items-center gap-1.5 hover:text-gold transition-colors"><i class="fa fa-envelope text-gold"></i> info@bansallaw.ca</a>
+        <span class="text-white/20">|</span>
+        <a href="tel:19055148000" class="flex items-center gap-1.5 hover:text-gold transition-colors"><i class="fa fa-phone text-gold"></i> 905-514-8000</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav class="bg-navy-mid sticky top-0 z-50 shadow-lg py-4 px-4 md:px-10">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded border-2 border-gold flex items-center justify-center">
+          <span class="text-gold font-serif font-black text-sm leading-none">BL</span>
+        </div>
+        <div>
+          <div class="text-white font-serif font-bold text-lg leading-none tracking-wide">Bansal <span class="text-gold">Law</span></div>
+          <div class="text-gray-400 text-[9px] tracking-[0.18em] uppercase leading-none mt-0.5">Barristers &amp; Solicitors</div>
+        </div>
+      </a>
+      <div class="hidden lg:flex items-center gap-7 text-sm font-medium text-gray-300">
+        <a href="index.html#about" class="hover:text-gold transition-colors">About</a>
+        <a href="index.html#services" class="hover:text-gold transition-colors">Services</a>
+        <a href="index.html#team" class="hover:text-gold transition-colors">Our Team</a>
+        <a href="success-stories.html" class="text-gold">Success Stories</a>
+        <a href="blog.html" class="hover:text-gold transition-colors">Blog</a>
+        <a href="significant-cases.html" class="hover:text-gold transition-colors">Significant Cases</a>
+        <a href="index.html#contact" class="hover:text-gold transition-colors">Contact</a>
+        <a href="book-consultation.html" class="btn-gold px-5 py-2.5 rounded text-white text-sm">Book a Consultation</a>
+      </div>
+      <button id="mobileMenuBtn" class="lg:hidden text-gold text-2xl p-2 -mr-2"><i class="fa fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu" class="fixed inset-0 z-[999] hidden">
+    <div id="mobileMenuOverlay" class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+    <div class="absolute top-0 right-0 h-full w-72 max-w-[85vw] bg-navy-mid shadow-2xl flex flex-col">
+      <div class="flex items-center justify-between px-5 py-4 border-b border-white/10">
+        <div class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded border-2 border-gold flex items-center justify-center"><span class="text-gold font-serif font-black text-xs leading-none">BL</span></div>
+          <div class="text-white font-serif font-bold text-base leading-none">Bansal <span class="text-gold">Law</span></div>
+        </div>
+        <button id="mobileMenuClose" class="text-gray-400 hover:text-white text-xl p-1.5 -mr-1"><i class="fa fa-xmark"></i></button>
+      </div>
+      <nav class="flex flex-col flex-1 overflow-y-auto px-5 py-3">
+        <a href="index.html#about" class="mobile-nav-link text-gray-300 hover:text-gold py-3.5 border-b border-white/5 text-sm font-medium transition-colors flex items-center justify-between">About <i class="fa fa-chevron-right text-[10px] text-gray-600"></i></a>
+        <a href="index.html#services" class="mobile-nav-link text-gray-300 hover:text-gold py-3.5 border-b border-white/5 text-sm font-medium transition-colors flex items-center justify-between">Services <i class="fa fa-chevron-right text-[10px] text-gray-600"></i></a>
+        <a href="index.html#team" class="mobile-nav-link text-gray-300 hover:text-gold py-3.5 border-b border-white/5 text-sm font-medium transition-colors flex items-center justify-between">Our Team <i class="fa fa-chevron-right text-[10px] text-gray-600"></i></a>
+        <a href="success-stories.html" class="mobile-nav-link text-gray-300 hover:text-gold py-3.5 border-b border-white/5 text-sm font-medium transition-colors flex items-center justify-between">Success Stories <i class="fa fa-chevron-right text-[10px] text-gray-600"></i></a>
+        <a href="index.html#contact" class="mobile-nav-link text-gray-300 hover:text-gold py-3.5 border-b border-white/5 text-sm font-medium transition-colors flex items-center justify-between">Contact <i class="fa fa-chevron-right text-[10px] text-gray-600"></i></a>
+      </nav>
+      <div class="px-5 py-5 border-t border-white/10">
+        <a href="book-consultation.html" class="btn-gold block text-center py-3.5 rounded text-sm uppercase tracking-wider"><i class="fa fa-calendar-check mr-2"></i> Book a Consultation</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero-bg py-14 px-4 md:px-10">
+    <div class="max-w-4xl mx-auto text-center">
+      <a href="success-stories.html" class="inline-flex items-center gap-2 text-gray-500 hover:text-gold text-xs font-semibold uppercase tracking-widest mb-8 transition-colors">
+        <i class="fa fa-arrow-left text-[10px]"></i> Back to Success Stories
+      </a>
+      <div class="inline-flex items-center gap-2 border border-gold/30 bg-gold/5 text-gold text-[10px] font-semibold tracking-[0.2em] uppercase px-4 py-2 rounded-full mb-6">
+        <i id="case-icon-el" class="fa fa-landmark text-[9px]"></i>
+        <span id="case-category-el">Federal Court</span>
+      </div>
+      <h1 id="case-title-el" class="font-serif font-bold text-3xl md:text-4xl lg:text-5xl text-white leading-tight mb-6">Case Study</h1>
+      <div id="case-badge-el" class="outcome-badge text-base px-6 py-2 mx-auto" style="display:inline-flex;">OUTCOME</div>
+    </div>
+  </section>
+
+  <!-- STEP NAVIGATION -->
+  <div class="bg-navy-mid border-b border-white/5 sticky top-[73px] z-40 py-5 px-4 md:px-10">
+    <div class="max-w-4xl mx-auto">
+      <div class="flex items-start gap-0">
+        <!-- Step 1 -->
+        <div class="step-tab flex flex-col items-center" onclick="showStep(0)" id="tab-0">
+          <div class="step-circle" id="circle-0">1</div>
+          <div class="step-label" id="label-0">Situation</div>
+        </div>
+        <div class="step-connector mt-[17px] mx-1" id="conn-0"></div>
+        <!-- Step 2 -->
+        <div class="step-tab flex flex-col items-center" onclick="showStep(1)" id="tab-1">
+          <div class="step-circle" id="circle-1">2</div>
+          <div class="step-label" id="label-1">Challenge</div>
+        </div>
+        <div class="step-connector mt-[17px] mx-1" id="conn-1"></div>
+        <!-- Step 3 -->
+        <div class="step-tab flex flex-col items-center" onclick="showStep(2)" id="tab-2">
+          <div class="step-circle" id="circle-2">3</div>
+          <div class="step-label" id="label-2">Our Approach</div>
+        </div>
+        <div class="step-connector mt-[17px] mx-1" id="conn-2"></div>
+        <!-- Step 4 -->
+        <div class="step-tab flex flex-col items-center" onclick="showStep(3)" id="tab-3">
+          <div class="step-circle" id="circle-3">4</div>
+          <div class="step-label" id="label-3">The Outcome</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP CONTENT -->
+  <section class="py-16 px-4 md:px-10 bg-navy min-h-[50vh]">
+    <div class="max-w-3xl mx-auto">
+      <div class="content-card p-8 md:p-12 mb-8">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="w-14 h-14 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center flex-shrink-0">
+            <i id="step-icon-el" class="fa fa-user text-gold text-xl"></i>
+          </div>
+          <div>
+            <div id="step-num-el" class="text-[10px] font-semibold text-gray-500 tracking-widest uppercase mb-1">Step 1 of 4</div>
+            <h2 id="step-heading-el" class="font-serif font-bold text-2xl md:text-3xl text-white leading-snug">The Situation</h2>
+          </div>
+        </div>
+        <div class="gold-divider"></div>
+        <p id="step-body-el" class="text-gray-300 text-base leading-relaxed"></p>
+        <div class="gold-divider"></div>
+        <div class="flex items-center justify-between gap-4 mt-2">
+          <button id="btn-back" onclick="prevStep()" class="btn-outline-gold px-6 py-2.5 rounded text-sm inline-flex items-center gap-2 opacity-0 pointer-events-none transition-opacity">
+            <i class="fa fa-arrow-left text-xs"></i> Previous
+          </button>
+          <div id="step-dots" class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-gold" id="dot-0"></span>
+            <span class="w-2 h-2 rounded-full bg-white/20" id="dot-1"></span>
+            <span class="w-2 h-2 rounded-full bg-white/20" id="dot-2"></span>
+            <span class="w-2 h-2 rounded-full bg-white/20" id="dot-3"></span>
+          </div>
+          <button id="btn-next" onclick="nextStep()" class="btn-gold px-6 py-2.5 rounded text-sm inline-flex items-center gap-2">
+            Next <i class="fa fa-arrow-right text-xs"></i>
+          </button>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href="success-stories.html" class="text-gray-500 hover:text-gold text-sm transition-colors inline-flex items-center gap-2">
+          <i class="fa fa-th-large text-xs"></i> View All Case Outcomes
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 px-4 md:px-10 bg-navy-mid border-t border-white/5">
+    <div class="max-w-3xl mx-auto text-center">
+      <div class="inline-flex items-center gap-2 border border-gold/30 bg-gold/5 text-gold text-[10px] font-semibold tracking-[0.2em] uppercase px-4 py-2 rounded-full mb-6">
+        <i class="fa fa-shield-halved text-[9px]"></i> Your Case Matters
+      </div>
+      <h2 class="font-serif font-bold text-2xl md:text-3xl text-white mb-4">Facing a Refusal or Removal?</h2>
+      <p class="text-gray-400 text-sm leading-relaxed mb-8 max-w-xl mx-auto">Every case on this page started with a refusal. Through strategic legal advocacy and Federal Court expertise, we fight to restore your rights. Start with a free, confidential consultation.</p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="index.html#contact" class="btn-gold px-7 py-3 rounded text-sm inline-block">Book Free Consultation</a>
+        <a href="tel:19055148000" class="btn-outline-gold px-7 py-3 rounded text-sm inline-flex items-center gap-2"><i class="fa fa-phone text-sm"></i> 905-514-8000</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-navy border-t border-white/5 py-10 px-4 md:px-10">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded border-2 border-gold flex items-center justify-center"><span class="text-gold font-serif font-black text-xs leading-none">BL</span></div>
+        <div>
+          <div class="text-white font-serif font-bold text-base leading-none">Bansal <span class="text-gold">Law</span></div>
+          <div class="text-gray-500 text-[9px] tracking-[0.15em] uppercase leading-none mt-0.5">Barristers &amp; Solicitors</div>
+        </div>
+      </a>
+      <div class="flex items-center gap-6 text-xs text-gray-500">
+        <a href="index.html" class="hover:text-gold transition-colors">Home</a>
+        <a href="index.html#services" class="hover:text-gold transition-colors">Services</a>
+        <a href="success-stories.html" class="hover:text-gold transition-colors">Success Stories</a>
+        <a href="index.html#contact" class="hover:text-gold transition-colors">Contact</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="https://www.instagram.com/bansal.law.pc/" target="_blank" rel="noopener" class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:border-gold hover:text-gold transition-all"><i class="fa-brands fa-instagram text-sm"></i></a>
+        <a href="https://www.facebook.com/immigration.oasis/" target="_blank" rel="noopener" class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:border-gold hover:text-gold transition-all"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto mt-8 pt-6 border-t border-white/5 text-center text-[11px] text-gray-600">
+      &copy; 2024 Bansal Law Professional Corporation. All rights reserved. &middot; 905-514-8000 &middot; info@bansallaw.ca
+    </div>
+  </footer>
+
+  <script>
+  // ── CASE DATA ──────────────────────────────────────────────────────────────
+  const CASES = {
+    1:{title:"Express Entry Score Dispute Won",cat:"Permanent Residence - Federal Court",icon:"fa-id-card",badge:"REFUSAL SET ASIDE",
+      s:["A Canadian Experience Class application was refused after points were stripped for foreign work experience, dropping the score below the required threshold. The applicant had qualifying Canadian work experience, but the refusal focused on how additional foreign experience was assessed.",
+         "The key issue was how the work experience had been interpreted, not whether the applicant met core program requirements. The refusal raised serious procedural fairness concerns, as the applicant was not given a meaningful opportunity to address the officer's conclusions before the decision was made.",
+         "We filed a Judicial Review application in the Federal Court of Canada, demonstrating through evidence and legal argument that the work performed met the required standards under the applicable rules. We highlighted the need for a fair decision-making process and engaged directly with IRCC counsel through detailed written submissions.",
+         "The matter was resolved through a settlement with IRCC counsel. The refusal was set aside and the application was reopened for reconsideration by a different officer, giving the applicant a renewed opportunity for permanent residence."]},
+    2:{title:"5-Year Misrepresentation Ban Overturned",cat:"Work Permit - 5-Year Ban",icon:"fa-ban",badge:"REFUSAL SET ASIDE",
+      s:["A work permit application was refused in March 2025, with the applicant also found inadmissible for five years on alleged misrepresentation grounds. The refusal focused on concerns that certain educational documents were not genuine, calling the applicant's credibility into question.",
+         "Despite a detailed response submitted through the procedural fairness letter process, the application was still refused and the serious misrepresentation finding was maintained. The five-year inadmissibility created significant long-term consequences for the applicant's ability to enter or remain in Canada.",
+         "We challenged the outcome by filing a Judicial Review in the Federal Court of Canada, focusing on demonstrating that the applicant had provided consistent, verifiable documentation addressing all concerns. We emphasized fairness, proper assessment of evidence, and the need for a reasonable decision-making process.",
+         "The matter was successfully resolved through a settlement with IRCC counsel. The refusal was set aside and the application was reopened for reconsideration, giving the applicant a fair second opportunity."]},
+    3:{title:"Employment Authenticity Challenge Reversed",cat:"Permanent Residence - Federal Court",icon:"fa-briefcase",badge:"REFUSAL SET ASIDE",
+      s:["A permanent residence application under the Canadian Experience Class was refused because the officer was not satisfied that the employment was genuine. The refusal questioned the reliability of payroll records, bank statements, and employment letters submitted with the application.",
+         "The officer's concerns centered on the authenticity of employment documentation, without properly accounting for the full body of evidence. Key explanations and corroborating materials from multiple independent sources were overlooked, and the decision did not reflect a balanced assessment of the full file.",
+         "We filed a Judicial Review in the Federal Court of Canada, demonstrating that the applicant had consistently provided detailed and verifiable evidence, including employer confirmations, accounting records, and tax documents. We showed how the evidence aligned across multiple independent sources and that important materials were not meaningfully considered.",
+         "The case was resolved through a settlement with IRCC counsel. The refusal was set aside and the application was reopened for reconsideration by a different officer."]},
+    4:{title:"Foreign Experience Points Restored",cat:"Permanent Residence - Federal Court",icon:"fa-globe",badge:"REFUSAL SET ASIDE",
+      s:["A permanent residence application under Express Entry was refused after the Invitation to Apply stage. The officer concluded that the applicant had not sufficiently demonstrated qualifying foreign work experience, resulting in points being removed and the score falling below the required threshold.",
+         "The refusal raised serious legal and procedural concerns. It relied on assumptions about the work experience that were not clearly communicated to the applicant during processing, denying a fair opportunity to respond. The application had included detailed and consistent documentation supporting the claimed work experience.",
+         "We filed a Judicial Review in the Federal Court of Canada, highlighting the importance of fair process, proper application of immigration rules, and a complete evaluation of submitted evidence. We actively engaged with IRCC counsel and presented strong legal submissions addressing each ground of the refusal.",
+         "The Department agreed to settle. The refusal was set aside and the application was reopened for reconsideration by a different officer."]},
+    5:{title:"Super Visa Denial Reversed on Review",cat:"Super Visa - Federal Court",icon:"fa-house-user",badge:"REFUSAL SET ASIDE",
+      s:["A Parent and Grandparent Super Visa application was refused on concerns about the applicants' financial situation and doubts about whether they would leave Canada at the end of their stay. The decision suggested certain financial transactions were unclear and that the purpose of travel did not align with a temporary visit.",
+         "The refusal relied on broad statements and did not properly consider the full scope of evidence submitted. Key documents demonstrating financial capacity, family ties outside Canada, and the temporary nature of the visit were not meaningfully analyzed before the decision was made.",
+         "We filed a Judicial Review in the Federal Court of Canada, arguing the decision failed to properly consider the complete evidence record. We emphasized compliance with all Super Visa requirements and engaged with IRCC counsel through detailed legal submissions showing the application met the program's framework.",
+         "Discussions with IRCC counsel led to a settlement. The refusal was set aside and the matter was reopened for reconsideration by a different officer."]},
+    6:{title:"Arranged Employment Points Decision Reversed",cat:"Permanent Residence - Federal Court",icon:"fa-file-contract",badge:"SETTLEMENT REACHED",
+      s:["A permanent residence application under Express Entry was refused. The officer concluded the applicant did not qualify for arranged employment points, which affected overall eligibility. The main issue was that the applicant did not hold a valid work permit at the time of the decision.",
+         "The application was refused despite supporting documentation being submitted. The legal question was whether a valid job offer supported by proper authorization documents could still meet arranged employment requirements, even in complex situations involving work status.",
+         "We filed a Judicial Review in the Federal Court of Canada, challenging the legal framework applied to arranged employment. Through detailed submissions, we demonstrated how the application met the required criteria when properly interpreted under immigration regulations and highlighted the importance of a fair assessment of all submitted materials.",
+         "The matter was resolved through a settlement with IRCC counsel. The decision was set aside and the application was reopened for reconsideration."]},
+    7:{title:"Misrepresentation Finding Set Aside",cat:"Work Permit - Misrepresentation",icon:"fa-shield-halved",badge:"REFUSAL SET ASIDE",
+      s:["A work permit application was refused on the basis of alleged misrepresentation, resulting in a five-year inadmissibility finding. The refusal stemmed from concerns about a supporting document. Despite a timely and detailed response to a procedural fairness letter, the application was still refused.",
+         "The officer maintained a serious misrepresentation finding even after the applicant provided a clear, documented explanation addressing all concerns. The case raised important questions about whether the full record had been properly weighed before the final decision was made.",
+         "We filed a Judicial Review in the Federal Court of Canada, demonstrating that the applicant had acted in good faith and provided credible, consistent evidence. We highlighted how the applicant proactively supported their position when concerns were raised and argued the matter deserved a fair reassessment of the full record.",
+         "IRCC counsel agreed to settle. The refusal was set aside and the case was reopened for reconsideration by a different officer."]},
+    8:{title:"Income Assessment Challenge Won",cat:"Super Visa - Income Challenge",icon:"fa-coins",badge:"SETTLEMENT REACHED",
+      s:["A Parent and Grandparent Super Visa application was refused on the basis that the financial requirement - minimum necessary income - was not sufficiently demonstrated. The application had been submitted in 2025 and included financial documentation in support of sponsorship eligibility.",
+         "The decision did not properly consider the full financial picture presented in the application. Current employment, ongoing income, and multiple supporting documents were not assessed together as a whole, which is critical in Super Visa sponsorship matters.",
+         "We filed a Judicial Review in the Federal Court of Canada, arguing that the decision failed to properly consider the complete financial evidence. We emphasized that all relevant materials must be assessed together and presented detailed legal arguments showing why a reassessment was necessary under the law.",
+         "The matter was resolved through a settlement with IRCC counsel. The refusal was set aside and the application was reopened for fresh consideration by a different officer."]},
+    9:{title:"Occupational Criteria Dispute Won",cat:"Permanent Residence - Federal Court",icon:"fa-chart-line",badge:"REFUSAL SET ASIDE",
+      s:["A permanent residence application under Express Entry was refused in November 2025. The officer concluded the applicant's Canadian work experience did not meet the required occupational criteria, which led to a reduction in ranking points and ultimately resulted in refusal.",
+         "The decision failed to properly assess the work experience as a whole. Rather than considering the full employment record and the true nature of the work performed, the officer focused on isolated elements that did not accurately reflect the applicant's actual duties and responsibilities.",
+         "We filed a Judicial Review in the Federal Court of Canada, arguing the decision did not properly assess the full record or apply the correct legal framework. We carefully presented detailed documentation - including employment records and supporting evidence - to show consistency, continuity, and the true nature of the work performed.",
+         "IRCC counsel agreed to resolve the matter. The refusal was set aside and the case was reopened for reconsideration, giving the applicant another opportunity to have the application properly reviewed."]},
+    10:{title:"Undisclosed Employer Concern - Refusal Reversed",cat:"Work Permit - Federal Court",icon:"fa-building",badge:"SETTLEMENT REACHED",
+      s:["A work permit extension and related family applications were refused in 2025. The refusal was based on concerns about the employer's genuineness, despite the application including all required documents and a valid Labour Market Impact Assessment.",
+         "The critical concern leading to refusal was never communicated to the applicant before the decision was made. This left no opportunity to respond or clarify - a fundamental failure of procedural fairness. The decision also failed to meaningfully engage with the submitted evidence.",
+         "We filed a Judicial Review in the Federal Court of Canada, focusing on fairness and proper legal process. We emphasized that applicants must be given a fair chance to address concerns that are not obvious from the application itself, and presented how the decision lacked transparency and did not engage with the evidence.",
+         "IRCC counsel agreed to resolve the matter. A settlement was reached and the case was reopened for reconsideration by a different officer."]},
+    11:{title:"Skills Assessment Overturned",cat:"Permanent Residence - Federal Court",icon:"fa-user-check",badge:"REFUSAL SET ASIDE",
+      s:["A permanent residence application under the Canadian Experience Class was refused on the basis that the applicant did not sufficiently demonstrate the required skills and qualifications for their claimed occupation. The refusal also relied on the absence of certain formal training elements.",
+         "A detailed reconsideration request was submitted with additional explanations and supporting documents. Despite this, the decision was maintained without meaningful engagement with the new material, raising serious concerns about whether the evidence had been properly considered at any stage.",
+         "We filed a Judicial Review in the Federal Court of Canada, advancing arguments on fairness, proper assessment of evidence, and correct application of immigration law. We carefully addressed the legal requirements of the program and demonstrated how the applicant's real work experience met those requirements through consistent employment records and practical job duties.",
+         "The matter was resolved through a settlement with IRCC counsel. The case was reopened for fresh consideration by a different officer."]},
+    12:{title:"Exclusion Order Stopped - Stay Granted",cat:"Exclusion Order - Federal Court Stay",icon:"fa-door-open",badge:"EXCLUSION ORDER SET ASIDE",
+      s:["A temporary resident was refused at a Canadian port of entry while attempting to renew a work permit and continue working legally. An exclusion order was issued based on concerns that the individual did not meet requirements to obtain a work permit at the border, along with concerns about financial ability and potential unauthorized work.",
+         "The exclusion order had immediate and serious consequences for both employment and future immigration prospects. Acting urgently was essential - we needed to not only challenge the decision but also stop removal from Canada before it was enforced.",
+         "We filed a Judicial Review and urgently sought an emergency stay of removal in the Federal Court of Canada. The Court granted the stay, recognizing the case raised serious legal issues and that removal would cause significant harm. We then presented evidence showing the applicant had acted in good faith and followed proper legal steps to maintain immigration status.",
+         "Counsel for IRCC agreed the decision should be reconsidered and offered a settlement to resolve the case. The exclusion order was set aside and the matter was sent back for reconsideration, allowing the applicant's immigration process to continue."]},
+    13:{title:"Unfair Misrepresentation Finding Set Aside",cat:"Work Permit - LMIA",icon:"fa-file-lines",badge:"SETTLEMENT REACHED",
+      s:["IRCC refused an LMIA-based work permit extension and a related spousal open work permit. The refusal was based on the conclusion that the applicant had misrepresented information in a separate, already-closed permanent residence application - specifically by listing a spouse as non-accompanying even though the spouse was living in Canada.",
+         "The officer used a closed and previously resolved application to make a serious new adverse finding without giving the applicant any opportunity to explain. The decision also failed to properly consider key evidence, including the valid LMIA, the applicant's work history, qualifications, and lawful status in Canada.",
+         "We filed a Judicial Review in the Federal Court of Canada, arguing the officer's decision was unreasonable and unfair. We demonstrated that relying on a closed file to reach a serious negative finding - without allowing the applicant to respond - violated procedural fairness and the standards of reasonable decision-making.",
+         "After reviewing the Applicant's Record and Memorandum of Argument, IRCC counsel agreed to settle without a court hearing. Both refusal decisions were set aside and both applications were reopened for redetermination by a different officer."]},
+    14:{title:"Overseas LMIA Application Reversed",cat:"Work Permit - Overseas Application",icon:"fa-plane-arrival",badge:"REFUSAL SET ASIDE",
+      s:["An LMIA-based work permit application submitted from outside Canada was refused. The refusal was based on concerns that the applicant had not shown sufficient ability to perform the job and might not leave Canada at the end of the authorized stay.",
+         "The officer relied heavily on the absence of certain documents - such as bank records showing salary deposits - without clearly explaining why documents already submitted were not sufficient. The officer also did not give the applicant a fair chance to respond to concerns about temporary stay before making the refusal.",
+         "We challenged the decision in Federal Court, presenting the case as one about fairness, proper reasoning, and whether the officer had assessed the evidence in a reasonable way. We argued the decision-making process was flawed and the applicant had not been given a meaningful opportunity to address the officer's concerns.",
+         "IRCC counsel agreed to settle. The refusal was set aside and the application was reopened for reconsideration by a different officer."]},
+    15:{title:"Government Compelled to Decide",cat:"Mandamus Application - Federal Court",icon:"fa-clock",badge:"SETTLEMENT REACHED",
+      s:["A post-graduation work permit had been issued for a shorter duration than the applicant was entitled to. A reconsideration request was submitted, the file was reopened, and immigration authorities raised concerns and requested additional documents - which the applicant provided fully and on time.",
+         "Despite full compliance with every document request, the file remained pending for several months with no decision. This created serious risk, as the applicant's work permit was approaching expiry, which could have affected both legal status and employment. The issue was administrative inaction - an unreasonable delay.",
+         "We prepared a mandamus application in the Federal Court of Canada to compel a decision, demonstrating full compliance by the applicant, the absence of any fault on their part, and the significant prejudice caused by the ongoing delay. We argued that once a case is reopened and documents requested, the authority has a legal duty to decide within a reasonable time.",
+         "Following service of the application, IRCC counsel agreed to resolve the matter. A settlement was reached, the file was reopened, and the decision-making process resumed, restoring the applicant's pathway to legal status."]},
+    16:{title:"TFWP Refusal - Fair Process Restored",cat:"Work Permit - TFWP",icon:"fa-hard-hat",badge:"SETTLEMENT REACHED",
+      s:["A work permit application under the Temporary Foreign Worker Program was refused. The refusal cited concerns about whether the applicant would leave Canada at the end of the authorized stay, whether the purpose of stay was temporary, and whether the job offer was genuine.",
+         "The officer's decision relied on limited online information and concerns that were never put to the applicant or employer for clarification. The applicant was not given any opportunity to respond before the officer reached negative conclusions about the job offer - a clear procedural fairness issue.",
+         "In the Judicial Review application, we focused on the legal errors in the refusal rather than simply re-arguing the work permit application. We submitted that the officer failed to properly explain the decision, did not meaningfully address the evidence, and relied on untested concerns in a way that affected the fairness of the entire process.",
+         "IRCC counsel agreed to settle. The refusal was set aside and the application was reopened for reconsideration by a different officer."]},
+    17:{title:"Boilerplate Refusal Overturned",cat:"Visitor Visa - Federal Court",icon:"fa-passport",badge:"REFUSAL SET ASIDE",
+      s:["A visitor visa application was refused on the basis that the officer was not satisfied the applicants would leave Canada at the end of their stay. The refusal cited concerns about family ties, purpose of travel, and overall connection to the home country.",
+         "The decision relied on broad, generic statements that appeared nearly identical for all applicants, without clearly explaining how the evidence was actually assessed. Key documents were not meaningfully considered, important factors were overlooked, and prior history was referenced without any clear reasoning connecting it to the refusal.",
+         "We challenged the refusal through a Judicial Review, focusing not on arguing the application was strong, but on demonstrating that the decision itself failed to meet the required legal standard. We showed the reasoning was generic and inadequate, and that a fair, individualized assessment was required under Canadian immigration law.",
+         "The matter was resolved through a settlement with IRCC counsel. The refusal was set aside and the application was reopened for reconsideration by a different officer."]},
+    18:{title:"Non-Genuine Job Offer Finding Overturned",cat:"Permanent Residence - Federal Court",icon:"fa-handshake",badge:"REFUSAL SET ASIDE",
+      s:["A permanent residence application under Express Entry was refused after the officer concluded that the job offer was not genuine and that the applicant's experience did not match the role. The decision was made without properly considering the full evidence that had been provided.",
+         "The officer relied on assumptions rather than clear evidence. Important documents - including proof of ongoing employment, employer explanations, and a valid government-approved work authorization - were either overlooked or not meaningfully analyzed. New concerns were introduced in the refusal that had never been raised earlier, denying the applicant a fair opportunity to respond.",
+         "We presented detailed legal submissions showing the process was unfair and the decision-making lacked proper reasoning. We clarified how the evidence directly addressed the officer's concerns and demonstrated that the application met the required standards when the full record was properly considered together.",
+         "Government legal counsel agreed to settle the matter. The refusal was set aside and the application was reopened for a fresh review by a different officer."]},
+    19:{title:"Wrong Policy Applied - Refusal Set Aside",cat:"Work Permit - Spousal",icon:"fa-ring",badge:"REFUSAL SET ASIDE",
+      s:["A spousal open work permit was refused after the immigration officer applied updated eligibility requirements to an application that had been submitted before the new policy took effect. The officer concluded the applicant did not meet requirements under the newly restricted list of eligible occupations.",
+         "Applying updated rules retroactively to an application submitted under the old policy created an unfair and unlawful outcome. The refusal also failed to properly consider key employment documents already submitted, and the applicant was given no opportunity to address the officer's concerns before the decision was finalized.",
+         "We challenged the refusal by clearly demonstrating that the wrong legal standard had been applied and that the decision-making process lacked fairness and proper reasoning. Our submissions highlighted that immigration decisions must be based on the rules in place at the time of application, and that all submitted evidence must be meaningfully considered.",
+         "The matter was resolved through a settlement with IRCC counsel. The refusal was set aside and the application was reopened for reconsideration by a different officer."]},
+    20:{title:"PR Points Restored After Job Offer Dispute",cat:"Permanent Residence - Federal Court",icon:"fa-house",badge:"REFUSAL SET ASIDE",
+      s:["A permanent residence application under the Canadian Experience Class was refused because immigration authorities concluded the applicant did not have a qualifying job offer. As a result, key Express Entry points were removed and the application fell below the required selection threshold.",
+         "The officer's conclusion failed to properly account for the employer-supported job offer, the LMIA-based position, and the full context of documents submitted. The employment offer was assessed in isolation rather than as part of the complete picture, which did not accurately reflect the applicant's circumstances.",
+         "We filed a Judicial Review in the Federal Court of Canada, arguing the employment offer should be assessed fairly and as a whole. We emphasized the applicant deserved a meaningful review of the evidence before losing the opportunity to pursue permanent residence, and presented detailed written arguments showing why the refusal should not stand.",
+         "IRCC counsel agreed to settle the matter. The refusal was set aside and the application was reopened for reconsideration, giving the applicant another opportunity to pursue permanent residence in Canada."]},
+    21:{title:"Childcare PR Application Reopened",cat:"Permanent Residence - Pilot Program",icon:"fa-child",badge:"REFUSAL SET ASIDE",
+      s:["A permanent residence application under the Home Childcare Provider Pilot Program was refused. The decision relied on a calculation that treated the applicant's work as falling short of the required weekly hours, concluding that the minimum six-month full-time experience threshold had not been met.",
+         "The assessment method used in the refusal did not align with how such applications should properly be evaluated. The applicant was also not given a fair opportunity to address the officer's concerns before the refusal was issued - a procedural fairness issue that compounded the flawed calculation.",
+         "We filed a Judicial Review in the Federal Court of Canada, carefully presenting employment records, structured timelines, and a clear breakdown of working periods. We demonstrated that the required experience had been achieved when the evidence was properly interpreted, and argued the assessment method used was incorrect under the program's framework.",
+         "The matter was resolved through a settlement with IRCC counsel. The application was reopened for reconsideration, giving the applicant a renewed opportunity for permanent residence approval."]},
+    22:{title:"Family-Based Work Permit Refusal Reversed",cat:"Work Permit - Federal Court",icon:"fa-file-circle-check",badge:"REFUSAL SET ASIDE",
+      s:["A work permit application under a family-based category was refused. The refusal raised concerns about eligibility requirements, the sufficiency of supporting documents, and doubts about the applicant's future intentions in Canada.",
+         "The decision did not meaningfully engage with the evidence that had been submitted. Rather than a careful assessment of the full record, the refusal appeared to rest on assumptions that could have been addressed had the applicant been given a fair opportunity to respond to the officer's concerns.",
+         "We prepared and filed a Judicial Review in the Federal Court of Canada, arguing the decision required reconsideration under the correct legal framework. We presented detailed legal submissions explaining how the evidence met the program requirements and why a fresh, complete review was necessary - emphasizing fairness and proper interpretation of immigration rules.",
+         "Discussions with IRCC counsel resulted in a settlement. The refusal was set aside and the matter was reopened for reconsideration by a different officer."]},
+    23:{title:"PGWP Duration Dispute Won",cat:"Work Permit - Post-Graduation",icon:"fa-graduation-cap",badge:"SETTLEMENT REACHED",
+      s:["A post-graduation work permit application was approved, but only for approximately 20 months - significantly less than the standard longer period typically associated with the applicant's completed program of study. The decision limited the permit duration without providing any explanation for why it was reduced.",
+         "The reduced permit duration created serious uncertainty and directly impacted the applicant's future work opportunities and immigration planning. Without any explanation for the shorter approval, the applicant had no way to understand the basis for the decision or how to address it going forward.",
+         "We initiated a Judicial Review in the Federal Court of Canada, challenging how the decision was made. We demonstrated that all required criteria were met, that the outcome did not align with established program guidelines, and that a longer duration was appropriate based on the completed program. We emphasized fairness, consistency, and proper application of the law.",
+         "IRCC counsel issued a settlement letter and the case was reopened for reconsideration, giving the applicant another opportunity for a fair and proper determination of the correct permit duration."]},
+    24:{title:"PGWP Refusal Overturned - Status Restored",cat:"Work Permit - Post-Graduation",icon:"fa-user-graduate",badge:"REFUSAL SET ASIDE",
+      s:["A post-graduation work permit application was refused on the basis that the applicant had not complied with study permit conditions during their studies. The refusal created serious consequences, including potential loss of legal status and significant uncertainty about future immigration options.",
+         "A careful review of the record revealed gaps between the evidence submitted and how it had been assessed. Key explanations and supporting materials that demonstrated compliance with study permit conditions were not meaningfully considered at the time of refusal, suggesting the decision was made without a full and fair evaluation.",
+         "We filed a Judicial Review in the Federal Court of Canada, challenging both the reasonableness and the fairness of the decision. Through detailed legal arguments, we demonstrated that the applicant had maintained valid documentation throughout their studies, had acted in good faith at every stage, and that the decision-making process failed to properly engage with the full context.",
+         "IRCC counsel agreed to resolve the matter without a full hearing. A settlement was reached, the refusal was set aside, and the application was reopened for reconsideration by a different officer."]},
+    25:{title:"Post-ITA Express Entry Refusal Reversed",cat:"Permanent Residence - Federal Court",icon:"fa-scale-balanced",badge:"REFUSAL SET ASIDE",
+      s:["A permanent residence application under Express Entry was refused after the Invitation to Apply had already been issued. The officer was not satisfied that the applicant's foreign work experience met the required occupational criteria, leading to a recalculation of points and refusal under section 11.2 of the Immigration and Refugee Protection Act.",
+         "The refusal raised serious concerns about whether the work experience had been properly and fully assessed. The applicant's documentation, when viewed in full context, supported eligibility - but the decision appeared to rely on a narrow reading of the record that did not account for all the evidence presented.",
+         "We filed a Judicial Review in the Federal Court of Canada, demonstrating through the existing record that the applicant's work experience met the required standard when assessed properly and in full context. We carefully structured legal arguments showing the evidence supported eligibility when interpreted fairly and consistently with established legal principles.",
+         "The matter was resolved through a settlement with IRCC counsel. The refusal was set aside and the application was reopened for reconsideration."]},
+    26:{title:"Visitor Visa Refusal Reversed",cat:"Visitor Visa - Federal Court",icon:"fa-plane",badge:"REFUSAL SET ASIDE",
+      s:["A temporary resident visa was refused on concerns that the applicant would not leave Canada at the end of the visit. The refusal cited concerns about family ties outside Canada, the purpose of travel, and financial capacity.",
+         "The decision failed to properly consider the full circumstances and supporting materials submitted with the application. Rather than conducting an individualized and balanced assessment, the officer relied on assumptions that were not grounded in a complete review of the evidence, including personal commitments, financial preparedness, and the temporary nature of the planned visit.",
+         "We initiated a Judicial Review in the Federal Court of Canada, presenting a complete picture of the applicant's situation. We carefully structured our arguments to demonstrate the application met the legal test when all factors were fairly assessed together, emphasizing consistency, clarity, and proper alignment of evidence with legal requirements.",
+         "IRCC counsel agreed to resolve the matter through a settlement. The refusal decision was set aside and the application was reopened for fresh consideration by a different officer."]},
+    27:{title:"Study Permit Misrepresentation Ban Reversed",cat:"Study Permit - 5-Year Ban",icon:"fa-graduation-cap",badge:"REFUSAL SET ASIDE",
+      s:["A study permit application submitted in late 2023 was refused in May 2024. The refusal was based on misrepresentation concerns - specifically, doubts about the authenticity of a key admission document. As a result, the applicant was also found inadmissible for a period of five years.",
+         "Despite providing a timely response to the officer's concerns - including official confirmation from the educational institution supporting the authenticity of the documents - the application was still refused. A subsequent reconsideration request was submitted but remained unanswered.",
+         "We initiated a Judicial Review in the Federal Court of Canada, focusing on procedural fairness and the importance of properly assessing all relevant evidence. We argued that credible, verifiable documentation had been provided to address all concerns raised during processing, and that these materials deserved meaningful consideration before any adverse finding was made.",
+         "The matter was resolved through a settlement with IRCC counsel. The case was reopened for reconsideration by a different officer, removing the five-year inadmissibility finding and giving the applicant a fair second chance to pursue their studies in Canada."]}
+  };
+
+  const STEP_ICONS = ["fa-user","fa-triangle-exclamation","fa-chess","fa-trophy"];
+  const STEP_HEADS = ["The Situation","The Challenge","Our Approach","The Outcome"];
+
+  // ── INIT ───────────────────────────────────────────────────────────────────
+  const params = new URLSearchParams(window.location.search);
+  const id = parseInt(params.get("id")) || 1;
+  const data = CASES[id] || CASES[1];
+  let cur = 0;
+
+  function init() {
+    document.title = data.title + " - Bansal Law";
+    document.getElementById("case-title-el").textContent = data.title;
+    document.getElementById("case-category-el").textContent = data.cat;
+    document.getElementById("case-icon-el").className = "fa " + data.icon + " text-[9px]";
+    const badge = document.getElementById("case-badge-el");
+    badge.innerHTML = '<i class="fa fa-circle-check text-xs mr-2"></i>' + data.badge;
+    showStep(0);
+  }
+
+  function showStep(n) {
+    cur = n;
+    document.getElementById("step-icon-el").className = "fa " + STEP_ICONS[n] + " text-gold text-xl";
+    document.getElementById("step-heading-el").textContent = STEP_HEADS[n];
+    document.getElementById("step-num-el").textContent = "Step " + (n+1) + " of 4";
+    document.getElementById("step-body-el").textContent = data.s[n];
+
+    // Update tabs
+    for (let i = 0; i < 4; i++) {
+      const tab = document.getElementById("tab-" + i);
+      const circle = document.getElementById("circle-" + i);
+      const lbl = document.getElementById("label-" + i);
+      tab.classList.remove("active","done");
+      circle.classList.remove("active","done");
+      if (i === n) { tab.classList.add("active"); circle.classList.add("active"); }
+      else if (i < n) { tab.classList.add("done"); circle.classList.add("done"); }
+      if (i < 3) {
+        const conn = document.getElementById("conn-" + i);
+        conn.classList.toggle("done", i < n);
+      }
+      // dot
+      const dot = document.getElementById("dot-" + i);
+      dot.classList.toggle("bg-gold", i === n);
+      dot.classList.toggle("bg-white/20", i !== n);
+    }
+
+    // Back button
+    const back = document.getElementById("btn-back");
+    back.style.opacity = n === 0 ? "0" : "1";
+    back.style.pointerEvents = n === 0 ? "none" : "auto";
+
+    // Next button
+    const next = document.getElementById("btn-next");
+    if (n === 3) {
+      next.innerHTML = 'View All Cases <i class="fa fa-th-large text-xs"></i>';
+    } else {
+      next.innerHTML = 'Next <i class="fa fa-arrow-right text-xs"></i>';
+    }
+  }
+
+  function nextStep() {
+    if (cur < 3) { showStep(cur + 1); }
+    else { window.location.href = "success-stories.html"; }
+  }
+  function prevStep() { if (cur > 0) showStep(cur - 1); }
+
+  init();
+
+  // Mobile menu
+  const mobileMenu = document.getElementById("mobileMenu");
+  const mobileOverlay = document.getElementById("mobileMenuOverlay");
+  function openMobileMenu() { mobileMenu.classList.remove("hidden"); document.body.style.overflow = "hidden"; }
+  function closeMobileMenu() { mobileMenu.classList.add("hidden"); document.body.style.overflow = ""; }
+  document.getElementById("mobileMenuBtn").addEventListener("click", openMobileMenu);
+  document.getElementById("mobileMenuClose").addEventListener("click", closeMobileMenu);
+  mobileOverlay.addEventListener("click", closeMobileMenu);
+  document.querySelectorAll(".mobile-nav-link").forEach(l => l.addEventListener("click", closeMobileMenu));
+  </script>
+</body>
+</html>

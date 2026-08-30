@@ -1,0 +1,204 @@
+backend:
+  name: github
+  repo: mathguy1234/bansallaw.com
+  branch: master
+  auth_type: pkce
+  app_id: Ov23licOqfBjcJ3NTizb
+
+
+media_folder: content/uploads
+public_folder: /content/uploads
+
+collections:
+
+  # ─── BLOG POSTS ────────────────────────────────────────────────────────────
+  - name: blog
+    label: Blog Posts
+    folder: content/blog
+    create: true
+    delete: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - label: Title
+        name: title
+        widget: string
+
+      - label: Date
+        name: date
+        widget: datetime
+        format: "YYYY-MM-DD"
+        date_format: "MMMM D, YYYY"
+        time_format: false
+
+      - label: Category
+        name: category
+        widget: select
+        options:
+          - Judicial Review
+          - Immigration Law
+          - Federal Court
+          - Litigation
+          - Practice Tips
+
+      - label: Status
+        name: status
+        widget: select
+        options:
+          - label: "Draft — hidden from website"
+            value: draft
+          - label: "Published — visible on website"
+            value: published
+        default: draft
+
+      - label: Short Summary
+        name: summary
+        widget: text
+        hint: "Shown on the blog cards page — keep it under 2 sentences"
+
+      - label: Reading Time
+        name: reading_time
+        widget: string
+        hint: "e.g. 5 min read"
+        required: false
+
+      - label: Callout Quote
+        name: callout_quote
+        widget: text
+        hint: "Optional — appears as a highlighted gold quote box at the top of the article"
+        required: false
+
+      - label: Article Body
+        name: body
+        widget: markdown
+
+  # ─── SUCCESS STORIES ───────────────────────────────────────────────────────
+  - name: success-stories
+    label: Success Stories
+    folder: content/success-stories
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    fields:
+      - label: Title
+        name: title
+        widget: string
+        hint: "e.g. Express Entry Score Dispute Won"
+
+      - label: Date
+        name: date
+        widget: datetime
+        format: "YYYY-MM-DD"
+        time_format: false
+
+      - label: Category
+        name: category
+        widget: select
+        options:
+          - Judicial Review
+          - Express Entry
+          - Work Permit
+          - Study Permit
+          - Spousal Sponsorship
+          - Detention Release
+          - Stay of Removal
+          - Visitor Visa
+          - Super Visa
+
+      - label: Status
+        name: status
+        widget: select
+        options:
+          - label: "Draft — hidden"
+            value: draft
+          - label: "Published"
+            value: published
+        default: draft
+
+      - label: Outcome Badge Text
+        name: outcome
+        widget: string
+        hint: "e.g. REFUSAL SET ASIDE · STAY GRANTED · APPLICATION APPROVED"
+
+      - label: Summary
+        name: summary
+        widget: text
+        hint: "2–4 sentences describing the case and its result"
+
+      - label: Card Icon
+        name: icon
+        widget: select
+        hint: "Choose an icon to display on the card"
+        options:
+          - label: Checkmark
+            value: fa-circle-check
+          - label: ID Card
+            value: fa-id-card
+          - label: Briefcase
+            value: fa-briefcase
+          - label: Globe
+            value: fa-globe
+          - label: House / Family
+            value: fa-house-user
+          - label: Shield
+            value: fa-shield-halved
+          - label: Scale of Justice
+            value: fa-scale-balanced
+          - label: Ban / Removal
+            value: fa-ban
+        default: fa-circle-check
+
+  # ─── SIGNIFICANT CASES ─────────────────────────────────────────────────────
+  - name: significant-cases
+    label: Significant Cases
+    folder: content/significant-cases
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    fields:
+      - label: Case Name
+        name: title
+        widget: string
+        hint: "e.g. Smith v. Canada (Minister of Citizenship and Immigration)"
+
+      - label: Citation
+        name: citation
+        widget: string
+        hint: "e.g. 2024 FC 123 or IMM-1234-24"
+
+      - label: Court
+        name: court
+        widget: string
+        hint: "e.g. Federal Court of Canada"
+        default: Federal Court of Canada
+
+      - label: Date
+        name: date
+        widget: datetime
+        format: "YYYY-MM-DD"
+        time_format: false
+
+      - label: Status
+        name: status
+        widget: select
+        options:
+          - label: "Draft — hidden"
+            value: draft
+          - label: "Published"
+            value: published
+        default: draft
+
+      - label: What Was Decided
+        name: outcome
+        widget: text
+        hint: "1–2 sentences on the legal ruling — plain and direct"
+
+      - label: What It Means For You
+        name: summary
+        widget: text
+        hint: "Plain-English explanation for clients about how this case affects them"
+
+      - label: Tags
+        name: tags
+        widget: list
+        hint: "e.g. Judicial Review, Work Permits, Express Entry (press Enter after each)"
+        required: false

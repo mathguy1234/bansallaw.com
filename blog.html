@@ -175,6 +175,9 @@
       </div>
     </div>
 
+    <!-- CMS POSTS — auto-loaded from GitHub, newest first -->
+    <div id="cms-blog-posts" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8"></div>
+
     <!-- ARTICLE GRID -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
@@ -358,6 +361,7 @@
     mobileOverlay.addEventListener('click', closeMobileMenu);
     document.querySelectorAll('.mobile-nav-link').forEach(link => link.addEventListener('click', closeMobileMenu));
   </script>
+  <script src="js/cms-render.js"></script>
 
 </body>
 </html>
